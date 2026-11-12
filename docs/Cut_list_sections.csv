@@ -1,0 +1,109 @@
+﻿Stock section,Material,Part number,Name,Cut length mm,Qty,Total length m
+Angle 100x75x8,S355J2,SC-203,Purlin cleat,120,28,3.36
+Angle 20x20x3,AISI 304,WB-322,Slide gate guide,200,4,0.8
+Angle 30x30x3,S235JR,DR-303,Lifter flight,1200,8,9.6
+Angle 30x30x3,S235JR,VS-412,Dust hood bearer,600,2,1.2
+Angle 40x40x4,S235JR,CR-201,Shelf runner,820,8,6.56
+Angle 40x40x4,S235JR,DR-711,Discharge hood support arm,400,2,0.8
+Angle 40x40x5,S235JR,SH-242,Comb support angle,302,2,0.6
+Angle 40x80x5,S235JR,RC-111,Roller rail 550,550,8,4.4
+Angle 50x50x5,S235JR,SF-204,Hopper support rim angle,1158,4,4.63
+Angle 50x50x5,S235JR,MX-411,Hood wall bracket,990,2,1.98
+Angle 60x60x6,S235JR,VS-309,Spring lug,80,4,0.32
+Flat bar 20x15,S235JR,TL-112,Carrier long rim bar,822,4,3.29
+Flat bar 20x15,S235JR,TL-113,Carrier cross rim bar,471,6,2.83
+Flat bar 20x7,S235JR,MX-224,Gate guide spacer,150,2,0.3
+Flat bar 25x4,S235JR,VS-306,Mesh clamp strip,836,2,1.67
+Flat bar 25x5,S235JR,VS-304,Deck support flat,836,2,1.67
+Flat bar 30x5,S235JR,SF-206,Grizzly end flat,1100,2,2.2
+Flat bar 35x5,S235JR,MX-225,Gate keeper strip,150,2,0.3
+Flat bar 40x10,Hardox 450,MX-313,Paddle side scraper,250,2,0.5
+Flat bar 80x5,S235JR,RC-121,"Return rail, press section",1090,2,2.18
+RHS 100x50x4,S235JR,TT-101,Base runner,800,2,1.6
+"RHS 120x60x3, hot-dip galvanised",S355J2,SC-201,Purlin,4590,21,96.39
+RHS 150x100x5,S235JR,TT-105,Support beam,400,1,0.4
+RHS 200x100x5,S355J2,SC-101,Rafter,7000,4,28.0
+RHS 200x100x6,S355J2,CT-101,Front header beam,12032.0,1,12.03
+RHS 80x40x3,S235JR,DR-201,Cradle rail,1400,2,2.8
+RHS 80x40x3,S235JR,DR-202,Cradle end beam,600,2,1.2
+RHS 80x40x3,S235JR,DR-203,Bearing riser block,70,8,0.56
+Round bar dia 12,S235JR,SF-205,Grizzly bar,1100,11,12.1
+Round bar dia 16,S355J2,SC-302,"Bracing rod dia 16, front",5771,2,11.54
+Round bar dia 16,S355J2,SC-301,"Bracing rod dia 16, rear",5201,4,20.8
+Round bar dia 20,C45,DR-206,Idler shaft dia 20,1000,1,1.0
+Round bar dia 30,C45,TT-201,Support / loading bar dia 30,360,3,1.08
+SHS 100x100x5,S355J2,CT-102,Front opening post,2410.0,3,7.23
+SHS 100x100x5,S235JR,HP-103,Press base frame - cross rail,960,2,1.92
+SHS 100x100x5,S235JR,MX-303,Mixer bridge beam,860,1,0.86
+SHS 100x100x5,S235JR,HP-102,Press base frame - long rail,800,2,1.6
+SHS 100x100x5,S235JR,HP-101,Press base frame - leg,557.0,4,2.23
+SHS 150x150x5,S355J2,SC-112,Front post,4195,4,16.78
+SHS 150x150x5,S355J2,SC-111,Rear post,3225,4,12.9
+SHS 25x25x2,S235JR,MX-512,Guard frame rail,850,2,1.7
+SHS 25x25x2,S235JR,MX-511,Guard frame upright,700,2,1.4
+SHS 25x25x2,S235JR,TR-312,"Guard top rail, long",550,2,1.1
+SHS 25x25x2,S235JR,TR-313,"Guard top rail, short",400,2,0.8
+SHS 25x25x2,S235JR,TR-311,Guard post,380,4,1.52
+SHS 30x30x2,S235JR,WB-503,Display cross bar,790,1,0.79
+SHS 30x30x2,S235JR,VS-411,Dust hood post,320,4,1.28
+SHS 30x30x2,S235JR,WB-502,Display post,320,2,0.64
+SHS 30x30x2,S235JR,TR-901,Control post,300,1,0.3
+SHS 30x30x2.5,S235JR,RC-201,Dough scale shelf - leg,682,4,2.73
+SHS 30x30x2.5,S235JR,DC-101,Dust collector stand - leg,489,4,1.96
+SHS 30x30x2.5,S235JR,DC-102,Dust collector stand - long rail,390,3,1.17
+SHS 30x30x2.5,S235JR,DC-103,Dust collector stand - cross rail,390,4,1.56
+SHS 30x30x2.5,S235JR,RC-203,Dough scale shelf - cross rail,360,4,1.44
+SHS 30x30x2.5,S235JR,RC-202,Dough scale shelf - long rail,180,4,0.72
+SHS 40x40x2.5,S235JR,TR-101,Trim table frame - leg,838,4,3.35
+SHS 40x40x2.5,S235JR,ST-101,Sorting table frame - leg,822,4,3.29
+SHS 40x40x2.5,S235JR,ST-102,Sorting table frame - long rail,820,3,2.46
+SHS 40x40x2.5,S235JR,TR-102,Trim table frame - long rail,770,3,2.31
+SHS 40x40x2.5,S235JR,TR-103,Trim table frame - cross rail,620,4,2.48
+SHS 40x40x2.5,S235JR,ST-103,Sorting table frame - cross rail,520,4,2.08
+SHS 40x40x3,S235JR,CR-101,Cooling rack frame - leg,1792,4,7.17
+SHS 40x40x3,S235JR,MX-702,Panel post,1500,1,1.5
+SHS 40x40x3,S235JR,RC-103,Roller table frame - cross rail,920,8,7.36
+SHS 40x40x3,S235JR,CR-103,Cooling rack frame - cross rail,820,4,3.28
+SHS 40x40x3,S235JR,RC-101,Roller table frame - leg,802,8,6.42
+SHS 40x40x3,S235JR,SH-291,Control post,500,1,0.5
+SHS 40x40x3,S235JR,CR-102,Cooling rack frame - long rail,480,7,3.36
+SHS 40x40x3,S235JR,RC-102,Roller table frame - long rail,470,8,3.76
+SHS 40x40x3,S235JR,DR-901,Control post,400,1,0.4
+SHS 40x40x3,S235JR,DR-512,Feed hood post,237,2,0.47
+SHS 40x40x3,S235JR,DR-712,Discharge hood post,142,2,0.28
+SHS 40x40x3,S235JR,MX-214,Drum standoff,82,4,0.33
+SHS 50x50x3,S235JR,WB-101,Weigh batcher frame - leg,1492,4,5.97
+SHS 50x50x3,S235JR,VS-103,Screen frame - cross rail,900,4,3.6
+SHS 50x50x3,S235JR,WB-102,Weigh batcher frame - long rail,900,5,4.5
+SHS 50x50x3,S235JR,WB-701,Incline screw support post,879,1,0.88
+SHS 50x50x3,S235JR,VS-101,Screen frame - leg,692,4,2.77
+SHS 50x50x3,S235JR,VS-102,Screen frame - long rail,500,3,1.5
+SHS 50x50x3,S235JR,WB-103,Weigh batcher frame - cross rail,500,5,2.5
+SHS 60x60x3,S235JR,DR-102,Dryer frame - long rail,1420,6,8.52
+SHS 60x60x3,S235JR,SC-104,"Knee brace, rear",995,4,3.98
+SHS 60x60x3,S235JR,DR-101,Dryer frame - leg,852.0,4,3.41
+SHS 60x60x3,S235JR,SC-105,"Knee brace, front",818,4,3.27
+SHS 60x60x3,S235JR,DR-103,Dryer frame - cross rail,580,6,3.48
+SHS 60x60x3,S235JR,DR-105,Dryer frame - jack cross rail,580,1,0.58
+SHS 60x60x4,S235JR,HP-105,Press base - return conveyor bearer,960,2,1.92
+SHS 60x60x4,S235JR,MX-101,Mixer frame - leg,842.0,4,3.37
+SHS 60x60x4,S235JR,SH-103,Shredder frame - cross rail,830,4,3.32
+SHS 60x60x4,S235JR,SH-101,Shredder frame - leg,792,4,3.17
+SHS 60x60x4,S235JR,MX-102,Mixer frame - long rail,780,4,3.12
+SHS 60x60x4,S235JR,MX-103,Mixer frame - cross rail,780,4,3.12
+SHS 60x60x4,S235JR,SH-102,Shredder frame - long rail,680,3,2.04
+SHS 80x80x4,S235JR,SF-511,Transfer screw support post,2243,1,2.24
+SHS 80x80x4,S235JR,SF-501,Elevating screw support post,2052,1,2.05
+SHS 80x80x4,S235JR,SF-101,Sand hopper stand - leg,1332,4,5.33
+SHS 80x80x4,S235JR,TT-103,Upright,1250,2,2.5
+SHS 80x80x4,S235JR,SF-102,Sand hopper stand - long rail,1120,6,6.72
+SHS 80x80x4,S235JR,SF-103,Sand hopper stand - cross rail,1120,5,5.6
+SHS 80x80x4,S235JR,MX-301,Bridge column,782,2,1.56
+SHS 80x80x4,S235JR,TT-104,Top beam,680,1,0.68
+Tube OD114.3 x 3.6,S235JR,SF-301,Elevating screw (45 deg) - casing tube,3484,1,3.48
+Tube OD114.3 x 3.6,S235JR,SF-401,Overhead transfer screw - casing tube,3060,1,3.06
+Tube OD114.3 x 3.6,S235JR,WB-601,Batch incline screw (45 deg) - casing tube,2023,1,2.02
+Tube OD33.7 x 3,S235JR,VS-303,Screen box cross tube,432,2,0.86
+Tube OD33.7 x 4,S235JR,SF-303,Elevating screw (45 deg) - screw centre pipe,3464,1,3.46
+Tube OD33.7 x 4,S235JR,SF-403,Overhead transfer screw - screw centre pipe,3040,1,3.04
+Tube OD33.7 x 4,S235JR,WB-603,Batch incline screw (45 deg) - screw centre pipe,2003,1,2.0

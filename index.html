@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tile Microfactory - Engineering Package</title>
+<style>
+:root{--bg:#f6f4ee;--card:#ffffff;--ink:#14212e;--mut:#627181;--line:#dcdfe1;--acc:#17805a;--acc2:#0f5f43;--warn:#b3261e;--amber:#b8730a;--chip:#e9f3ee;--shadow:0 1px 2px rgba(20,33,46,.06),0 4px 14px rgba(20,33,46,.06)}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{font:14px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--acc2)}
+header{position:sticky;top:0;z-index:20;background:#10332a;color:#fff;display:flex;align-items:center;gap:18px;padding:0 18px;height:52px}
+header .brand{font-weight:700;letter-spacing:.2px;white-space:nowrap}
+header .brand small{font-weight:400;opacity:.7;margin-left:8px}
+nav{display:flex;gap:2px;overflow:auto}
+nav button{background:none;border:0;color:#cfe3da;font:inherit;padding:16px 12px;cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap}
+nav button.on{color:#fff;border-bottom-color:#f0a43a}
+nav button:hover{color:#fff}
+main{max-width:1320px;margin:0 auto;padding:20px 18px 60px}
+section{display:none}section.on{display:block}
+h1{font-size:26px;margin:.2em 0 .3em;text-wrap:balance}h2{font-size:18px;margin:1.6em 0 .5em}h3{font-size:15px;margin:1.2em 0 .4em}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);padding:16px}
+.grid{display:grid;gap:14px}
+.tiles{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.tile b{display:block;font-size:22px;color:var(--acc2);font-variant-numeric:tabular-nums}
+.tile span{color:var(--mut);font-size:12px}
+.banner{background:#fff6e5;border:1px solid #f0cf8e;border-radius:10px;padding:12px 14px;margin:14px 0;color:#5a3d06}
+.banner b{color:#7a4b00}
+table{border-collapse:collapse;width:100%}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;color:var(--mut);font-weight:600;position:sticky;top:52px;background:var(--card)}
+td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tw{overflow:auto}
+.chip{display:inline-block;background:var(--chip);color:var(--acc2);border-radius:99px;padding:1px 9px;font-size:12px;margin:0 4px 4px 0;white-space:nowrap}
+.chip.buy{background:#eef1fb;color:#2b3f8f}.chip.warn{background:#fdecea;color:var(--warn)}
+.flow{display:flex;gap:8px;flex-wrap:wrap;align-items:stretch}
+.flow .st{flex:1 1 150px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;box-shadow:var(--shadow)}
+.flow .st:hover{border-color:var(--acc)}
+.flow .st i{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--acc);color:#fff;font-style:normal;font-size:12px;font-weight:700;margin-right:6px}
+.flow .st small{display:block;color:var(--mut);margin-top:4px}
+.hero{width:100%;border-radius:10px;border:1px solid var(--line);background:#fff;display:block}
+.two{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}
+@media(max-width:900px){.two{grid-template-columns:1fr}}
+ul.tight,ol.tight{margin:.3em 0;padding-left:1.3em}ul.tight li,ol.tight li{margin:.25em 0}
+.btn{display:inline-block;background:var(--acc);color:#fff;border:0;border-radius:7px;padding:7px 12px;font:inherit;cursor:pointer;text-decoration:none;margin:0 6px 6px 0}
+.btn.sec{background:#fff;color:var(--acc2);border:1px solid var(--acc)}
+.btn:hover{filter:brightness(1.08)}
+input[type=search],select{font:inherit;padding:7px 10px;border:1px solid var(--line);border-radius:7px;background:#fff;color:var(--ink)}
+/* machines */
+.split{display:grid;grid-template-columns:250px minmax(0,1fr);gap:16px;align-items:start}
+@media(max-width:900px){.split{grid-template-columns:1fr}}
+.mlist{position:sticky;top:68px;max-height:calc(100vh - 90px);overflow:auto;padding:6px}
+.mlist button{display:block;width:100%;text-align:left;background:none;border:0;font:inherit;padding:7px 9px;border-radius:7px;cursor:pointer;color:var(--ink)}
+.mlist button.on{background:var(--chip);color:var(--acc2);font-weight:600}
+.mlist button code{color:var(--mut);margin-right:6px}
+.tree{list-style:none;margin:0;padding-left:0}
+.tree ul{list-style:none;margin:0;padding-left:20px;border-left:1px dashed var(--line)}
+.tree li{padding:2px 0}
+.tree a{cursor:pointer;text-decoration:none}
+.tree a:hover{text-decoration:underline}
+.tree .q{color:var(--mut);font-variant-numeric:tabular-nums;margin-left:6px}
+.pn{font-family:ui-monospace,Consolas,monospace;font-size:12.5px;white-space:nowrap}
+/* viewer */
+#vwrap{display:grid;grid-template-columns:260px minmax(0,1fr);gap:12px;height:calc(100vh - 110px);min-height:480px}
+@media(max-width:900px){#vwrap{grid-template-columns:1fr;height:auto}#cv{height:60vh}}
+#vside{overflow:auto;padding:12px}
+#vside label{display:flex;align-items:center;gap:6px;padding:2px 0;cursor:pointer}
+#vside label span{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#vside .solo{border:0;background:none;color:var(--acc2);cursor:pointer;font-size:12px}
+#vmain{position:relative;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(#eef2f1,#dfe6e4)}
+#cv{width:100%;height:100%;display:block;touch-action:none;cursor:grab}
+#vinfo{position:absolute;left:12px;bottom:12px;max-width:360px;background:rgba(255,255,255,.95);border:1px solid var(--line);border-radius:10px;padding:10px 12px;box-shadow:var(--shadow);display:none}
+#vhelp{position:absolute;right:12px;top:10px;color:var(--mut);font-size:12px;background:rgba(255,255,255,.75);border-radius:6px;padding:3px 8px}
+/* dialog */
+dialog{border:0;border-radius:12px;padding:0;width:min(1100px,96vw);max-height:92vh;box-shadow:0 20px 60px rgba(0,0,0,.35);color:var(--ink)}
+dialog::backdrop{background:rgba(10,20,25,.5)}
+.dh{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);padding:12px 16px;display:flex;gap:12px;align-items:center;z-index:2}
+.dh h2{margin:0;flex:1;font-size:17px}
+.db{padding:14px 16px 20px}
+.dwg{width:100%;border:1px solid var(--line);border-radius:8px;background:#fff;display:block}
+.kv td:first-child{color:var(--mut);width:42%}
+.muted{color:var(--mut)}
+.bar{height:8px;background:var(--chip);border-radius:9px;overflow:hidden;min-width:80px}.bar i{display:block;height:100%;background:var(--acc)}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">Tile Microfactory<small>engineering package</small></div>
+  <nav id="nav"></nav>
+</header>
+<main>
+  <section id="overview"></section>
+  <section id="model">
+    <div id="vwrap">
+      <div id="vside" class="card"></div>
+      <div id="vmain"><canvas id="cv"></canvas><div id="vhelp">drag: orbit &nbsp; right-drag / shift-drag: pan &nbsp; wheel: zoom &nbsp; click: pick part</div><div id="vinfo"></div></div>
+    </div>
+  </section>
+  <section id="machines"><div class="split"><div class="card mlist" id="mlist"></div><div id="mdetail"></div></div></section>
+  <section id="parts"></section>
+  <section id="build"></section>
+  <section id="files"></section>
+</main>
+<dialog id="dlg"><div class="dh"><h2 id="dlgt"></h2><button class="btn sec" onclick="dlg.close()">Close</button></div><div class="db" id="dlgb"></div></dialog>
+<script src="data/data.js"></script>
+<script src="data/viewer_data.js"></script>
+<script>
+"use strict";
+const D = window.MF_DATA, G = window.MF_GEOM;
+const $ = (s, r=document) => r.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const TABS = [['overview','Overview'],['model','3D model'],['machines','Machines'],['parts','All parts'],['build','How to build'],['files','Files']];
+const MACH = Object.fromEntries(D.machines.map(m => [m.code, m]));
+const STATIONS = [['ST','1','Sort','HDPE only'],['SH','1','Shred','small flakes'],['SF','2','Sand in','hopper + screws'],['DR','2','Dry','rotary dryer'],['VS','2','Screen','2 mm'],['WB','3','Weigh','70 : 30 by weight'],['MX','4','Mix','heated, 190 C'],['HP','5','Press','2 tiles / cycle'],['CR','6','Cool','20 min'],['TR','7','Trim','check + stack']];
+const fmt = (x, d=0) => x == null ? '' : Number(x).toLocaleString('en', {maximumFractionDigits:d, minimumFractionDigits:d});
+
+function show(tab, arg){
+  for (const [id] of TABS) { $('#'+id).classList.toggle('on', id === tab); }
+  for (const b of $('#nav').children) b.classList.toggle('on', b.dataset.t === tab);
+  if (tab === 'model') V.start();
+  if (tab === 'machines') openMachine(arg || curMach || 'HP');
+  history.replaceState(null, '', '#' + tab + (arg ? '/' + arg : ''));
+  window.scrollTo(0, 0);
+}
+$('#nav').innerHTML = TABS.map(([id, n]) => `<button data-t="${id}" onclick="show('${id}')">${n}</button>`).join('');
+
+/* ---------------- overview */
+function buildOverview(){
+  const totalParts = Object.keys(D.parts).length, make = Object.values(D.parts).filter(p => p.kind !== 'buy').length;
+  const pieces = Object.values(D.parts).reduce((a, p) => a + p.qty, 0);
+  const steel = Object.values(D.parts).filter(p => p.kind !== 'buy').reduce((a, p) => a + (p.kg || 0) * p.qty, 0);
+  const eTot = D.energy.reduce((a, e) => a + e[2], 0);
+  $('#overview').innerHTML = `
+  <h1>Solar plastic-sand roof tile microfactory</h1>
+  <p class="muted" style="max-width:860px">A complete 3D model and build package for the line shown in the concept video: waste HDPE and ordinary sand go in, 100 roof tiles a shift come out of one 40-foot container under a solar canopy. Every part has a solid model, a drawing and a how-to-make route.</p>
+  <div class="banner"><b>Concept design - not yet a certified machine drawing.</b> The video ends with the same warning. Recipe, temperatures, press force, cooling time, structure, electrical protection and ventilation still need validating by qualified engineers before anything is built or run. The checklist is at the bottom of this page.</div>
+  <img class="hero" src="images/PLANT_front_right.png" alt="Rendered view of the complete plant">
+  <div class="grid tiles" style="margin-top:14px">
+    <div class="card tile"><b>100</b><span>tiles per shift (220 kg)</span></div>
+    <div class="card tile"><b>${fmt(D.info.tile_kg,2)} kg</b><span>modelled tile mass (target 2.2)</span></div>
+    <div class="card tile"><b>${D.machines.length}</b><span>machine / system groups</span></div>
+    <div class="card tile"><b>${totalParts}</b><span>unique parts (${make} made, ${totalParts-make} bought)</span></div>
+    <div class="card tile"><b>${fmt(pieces)}</b><span>pieces in the plant</span></div>
+    <div class="card tile"><b>${fmt(steel/1000,1)} t</b><span>fabricated material</span></div>
+    <div class="card tile"><b>19.8 kWp</b><span>solar, 40 kWh battery</span></div>
+  </div>
+  <h2>Process - one straight, one-way line</h2>
+  <div class="flow">${STATIONS.map(s => `<div class="st" onclick="show('machines','${s[0]}')"><i>${s[1]}</i><b>${s[2]}</b><small>${s[3]} · ${s[0]}</small></div>`).join('')}</div>
+  <img class="hero" style="margin-top:14px" src="images/PLANT_line_no_canopy.png" alt="Process line with canopy removed">
+  <div class="grid two" style="margin-top:14px">
+    <div class="card"><h3 style="margin-top:0">Design basis</h3><table class="kv">${D.basis.map(r => `<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join('')}</table></div>
+    <div class="card"><h3 style="margin-top:0">Energy per shift (estimate)</h3>
+      <table>${D.energy.map(e => `<tr><td>${esc(e[0])}<div class="muted" style="font-size:12px">${esc(e[1])}</div></td><td style="width:110px"><div class="bar"><i style="width:${e[2]/30*100}%"></i></div></td><td class="n">${e[2]} kWh</td></tr>`).join('')}
+      <tr><td><b>Total used</b></td><td></td><td class="n"><b>${eTot} kWh</b></td></tr><tr><td>PV yield at 5 peak sun hours</td><td></td><td class="n">~77 kWh</td></tr></table>
+      <p class="muted" style="margin-bottom:0">The mixer heaters are the biggest load, so mixing and pressing are scheduled for the strongest sun.</p></div>
+  </div>
+  <h2>Where this design differs from the video</h2>
+  <div class="card"><ul class="tight">${D.deviations.map(d => `<li>${esc(d)}</li>`).join('')}</ul></div>
+  <h2>Still to be validated</h2>
+  <div class="card"><table>${D.validate.map(v => `<tr><td style="width:170px"><span class="chip warn">open</span> <b>${esc(v[0])}</b></td><td>${esc(v[1])}</td></tr>`).join('')}</table></div>
+  <h2>Safety essentials</h2>
+  <div class="card"><ul class="tight">${D.safety.map(d => `<li>${esc(d)}</li>`).join('')}</ul></div>`;
+}
+
+/* ---------------- machines */
+let curMach = null;
+function treeHTML(rows){
+  return '<ul class="tree">' + rows.map(r => {
+    const isAsm = !!r.children;
+    const tag = r.kind === 'buy' ? '<span class="chip buy">buy</span>' : (isAsm ? `<span class="chip">${r.kind === 'weldment' ? 'weldment' : 'sub-assembly'}</span>` : '');
+    return `<li><a class="pn" onclick="${isAsm ? `openAsm('${r.ref}')` : `openPart('${r.ref}')`}">${r.ref}</a> ${esc(r.name)} ${tag}<span class="q">x ${r.qty}</span>${isAsm ? treeHTML(r.children) : ''}</li>`;
+  }).join('') + '</ul>';
+}
+function listHTML(title, arr, ordered){
+  if (!arr || !arr.length) return '';
+  const t = ordered ? 'ol' : 'ul';
+  return `<h3>${title}</h3><${t} class="tight">${arr.map(s => `<li>${esc(s)}</li>`).join('')}</${t}>`;
+}
+function openMachine(code){
+  curMach = code; const m = MACH[code]; if (!m) return;
+  $('#mlist').innerHTML = D.machines.map(x => `<button class="${x.code===code?'on':''}" onclick="show('machines','${x.code}')"><code>${x.code}</code>${esc(x.name.replace(/^Station \d\w? - /,''))}</button>`).join('');
+  const n = D.narrative[code] || {};
+  const hw = (m.hw || []).concat(...Object.entries(D.weldments).filter(([c]) => c.startsWith(code+'-')).map(([c,w]) => w.hw || []), ...Object.entries(D.subs).filter(([c]) => c.startsWith(code+'-')).map(([c,w]) => w.hw || []));
+  $('#mdetail').innerHTML = `
+  <div class="card">
+    <h1 style="font-size:22px"><span class="pn" style="font-size:18px;color:var(--mut)">${code}</span> ${esc(m.name)}</h1>
+    <p>${esc(m.desc)}</p>
+    <a class="btn" href="drawings/${code}_drawing_set.pdf" target="_blank">Drawing set (PDF)</a>
+    <a class="btn sec" href="models/step/assemblies/${code}.step" download>Assembly STEP</a>
+    ${m.pos ? `<button class="btn sec" onclick="V.solo('${code}');show('model')">Show in 3D</button>` : ''}
+    <span class="muted">${m.nparts} unique parts · ${m.ninst} pieces · about ${fmt(m.kg)} kg</span>
+    <img class="hero" style="margin-top:10px" src="images/${code}.png" alt="${esc(m.name)}">
+  </div>
+  <div class="grid two" style="margin-top:14px">
+    <div class="card"><h3 style="margin-top:0">Specification</h3><table class="kv">${(n.specs||[]).map(r => `<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join('')}</table>
+      ${listHTML('Checks before use', n.check)}${listHTML('Safety', n.safety)}</div>
+    <div class="card">${listHTML('Build and assembly', n.build, true).replace('<h3>','<h3 style="margin-top:0">')}${listHTML('Operation', n.operate, true)}</div>
+  </div>
+  <div class="card" style="margin-top:14px"><h3 style="margin-top:0">Structure - click any item for its sheet, files and how to make it</h3>${treeHTML(m.tree)}</div>
+  ${hw.length ? `<div class="card" style="margin-top:14px"><h3 style="margin-top:0">Hardware and consumables</h3><ul class="tight">${hw.map(h => `<li>${h[1]} x ${esc(h[0])}</li>`).join('')}</ul></div>` : ''}`;
+}
+
+/* ---------------- part + weldment dialogs */
+const dlg = $('#dlg');
+dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+function usedIn(pn){
+  const out = [];
+  for (const m of D.machines){ let n = 0; (function walk(rows, mult){ for (const r of rows){ if (r.children) walk(r.children, mult * r.qty); else if (r.ref === pn) n += mult * r.qty; } })(m.tree, 1); if (n) out.push(`<a onclick="dlg.close();show('machines','${m.code}')" style="cursor:pointer">${m.code}</a> x ${n}`); }
+  return out.join(', ');
+}
+function openPart(pn){
+  const p = D.parts[pn]; if (!p) return;
+  $('#dlgt').innerHTML = `<span class="pn">${pn}</span> &nbsp;${esc(p.name)}`;
+  const dims = Object.entries(p.dims || {});
+  $('#dlgb').innerHTML = `
+   <div><span class="chip ${p.kind==='buy'?'buy':''}">${p.kind==='buy'?'purchased':'made in-house'}</span><span class="chip">${esc(D.procname[p.proc]||p.proc)}</span><span class="chip">${esc(p.mat)}</span><span class="chip">qty in plant: ${p.qty}</span>${p.kg!=null?`<span class="chip">${fmt(p.kg,2)} kg each</span>`:''}</div>
+   <p><a class="btn" href="models/step/parts/${pn}.step" download>STEP</a><a class="btn sec" href="models/stl/${pn}.stl" download>STL</a>${p.dxf?`<a class="btn sec" href="models/dxf/${pn}.dxf" download>DXF flat profile</a>`:''}<a class="btn sec" href="drawings/parts/${pn}.svg" target="_blank">Open drawing full size</a></p>
+   <a href="drawings/parts/${pn}.svg" target="_blank"><img class="dwg" src="drawings/parts/${pn}.svg" alt="Drawing ${pn}"></a>
+   <div class="grid two" style="margin-top:12px">
+     <div><h3 style="margin-top:0">Data</h3><table class="kv">
+       <tr><td>Stock / specification</td><td>${esc(p.stock)}</td></tr>
+       <tr><td>Envelope X x Y x Z</td><td>${p.bbox.map(x => fmt(x,1)).join(' x ')} mm</td></tr>
+       ${dims.map(([k,v]) => `<tr><td>${esc(k)}</td><td>${esc(v)}</td></tr>`).join('')}
+       <tr><td>Used in</td><td>${usedIn(pn)}</td></tr></table>
+       ${p.holes && p.holes.length ? `<h3>Holes and bores</h3><ul class="tight">${p.holes.map(h => `<li>${esc(h)}</li>`).join('')}</ul><p class="muted">Positions from the minimum-X/Y/Z corner of the part as drawn.</p>` : ''}</div>
+     <div><h3 style="margin-top:0">${p.kind==='buy'?'Purchase and fitting':'How to make it'}</h3>
+       ${p.spec ? `<p><b>Specification:</b> ${esc(p.spec)}</p>` : ''}
+       <ol class="tight">${(p.route||[]).map(s => `<li>${esc(s)}</li>`).join('')}</ol>
+       ${p.notes ? `<p><b>Notes:</b> ${esc(p.notes)}</p>` : ''}</div>
+   </div>`;
+  if (!dlg.open) dlg.showModal(); dlg.scrollTop = 0;
+}
+function openAsm(code){
+  const w = D.weldments[code] || D.subs[code]; if (!w) return;
+  const isW = !!D.weldments[code];
+  $('#dlgt').innerHTML = `<span class="pn">${code}</span> &nbsp;${esc(w.name)}`;
+  $('#dlgb').innerHTML = `<div><span class="chip">${isW?'weldment':'sub-assembly'}</span></div>
+    <p><a class="btn" href="models/step/assemblies/${code}.step" download>${isW?'Weldment':'Assembly'} STEP</a>${isW?`<a class="btn sec" href="drawings/parts/${code}.svg" target="_blank">Open sheet full size</a>`:''}</p>
+    ${isW?`<a href="drawings/parts/${code}.svg" target="_blank"><img class="dwg" src="drawings/parts/${code}.svg" alt="Sheet ${code}"></a>`:`<img class="dwg" src="images/${code}.png" alt="${code}">`}
+    ${w.weld?`<h3>Welding and assembly</h3><p>${esc(w.weld)}</p>`:''}
+    <h3>Members</h3>${treeHTML(w.tree)}`;
+  if (!dlg.open) dlg.showModal(); dlg.scrollTop = 0;
+}
+
+/* ---------------- parts table */
+function buildParts(){
+  const procs = [...new Set(Object.values(D.parts).map(p => p.proc))].sort();
+  $('#parts').innerHTML = `<h1>All parts</h1>
+   <p><input type="search" id="pq" placeholder="Search number, name, material..." style="width:min(360px,100%)">
+   <select id="pm"><option value="">All machines</option>${D.machines.map(m => `<option>${m.code}</option>`).join('')}<option>CM</option></select>
+   <select id="pk"><option value="">Make + buy</option><option value="fab">Made in-house</option><option value="buy">Purchased</option></select>
+   <select id="pp"><option value="">All processes</option>${procs.map(p => `<option value="${p}">${esc(D.procname[p]||p)}</option>`).join('')}</select>
+   <span class="muted" id="pc"></span> &nbsp; <a href="docs/BOM_all_parts.csv" download>Download as CSV</a></p>
+   <div class="card tw" style="padding:0"><table id="pt"></table></div>`;
+  const draw = () => {
+    const q = $('#pq').value.toLowerCase(), m = $('#pm').value, k = $('#pk').value, pr = $('#pp').value;
+    const rows = Object.entries(D.parts).filter(([pn, p]) => (!m || pn.startsWith(m + '-')) && (!k || p.kind === k) && (!pr || p.proc === pr) && (!q || (pn + ' ' + p.name + ' ' + p.mat + ' ' + p.stock).toLowerCase().includes(q))).sort((a, b) => a[0].localeCompare(b[0]));
+    $('#pc').textContent = rows.length + ' parts';
+    $('#pt').innerHTML = `<tr><th>Number</th><th>Name</th><th>Qty</th><th>Material</th><th>Stock / specification</th><th>Process</th><th>kg each</th><th>Files</th></tr>` +
+      rows.map(([pn, p]) => `<tr><td><a class="pn" style="cursor:pointer" onclick="openPart('${pn}')">${pn}</a></td><td>${esc(p.name)}</td><td class="n">${p.qty}</td><td>${esc(p.mat)}</td><td>${esc(p.stock.length > 70 ? p.stock.slice(0, 68) + '…' : p.stock)}</td><td>${esc(D.procname[p.proc] || p.proc)}</td><td class="n">${p.kg == null ? '' : fmt(p.kg, 2)}</td><td style="white-space:nowrap"><a href="models/step/parts/${pn}.step" download>STEP</a>${p.dxf ? ` · <a href="models/dxf/${pn}.dxf" download>DXF</a>` : ''}</td></tr>`).join('');
+  };
+  for (const id of ['pq','pm','pk','pp']) $('#'+id).addEventListener('input', draw);
+  draw();
+}
+
+/* ---------------- build + files */
+function buildGuide(){
+  const byProc = {};
+  for (const p of Object.values(D.parts)) if (p.kind !== 'buy') { byProc[p.proc] = byProc[p.proc] || [0, 0]; byProc[p.proc][0]++; byProc[p.proc][1] += p.qty; }
+  $('#build').innerHTML = `<h1>How to build it</h1>
+  <p class="muted" style="max-width:860px">Each part has its own step-by-step route (open any part from the Machines or All parts tab). This page covers what applies to the whole job. The full text is also in <a href="docs/Manufacturing_Guide.md" target="_blank">docs/Manufacturing_Guide.md</a>.</p>
+  <div class="grid two">
+   <div class="card"><h3 style="margin-top:0">Workshop needed</h3><table class="kv">${D.workshop.map(r => `<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join('')}</table></div>
+   <div class="card"><h3 style="margin-top:0">Work content by process</h3><table><tr><th>Process</th><th>Unique parts</th><th>Pieces</th></tr>${Object.entries(byProc).sort((a,b)=>b[1][1]-a[1][1]).map(([k,v]) => `<tr><td>${esc(D.procname[k]||k)}</td><td class="n">${v[0]}</td><td class="n">${v[1]}</td></tr>`).join('')}</table>
+   <p><a class="btn sec" href="docs/Cut_list_sections.csv" download>Cut list of sections (CSV)</a><a class="btn sec" href="docs/BOM_hardware.csv" download>Hardware list (CSV)</a></p></div>
+  </div>
+  <h2>Build sequence</h2><div class="card"><ol class="tight">${D.sequence.map(s => `<li>${esc(s)}</li>`).join('')}</ol></div>
+  <h2>General fabrication rules</h2>
+  <div class="card"><ul class="tight">
+   <li><b>Units and datums:</b> everything is in millimetres. Linear members are drawn lying along X; plates are drawn flat. Hole positions are given from the minimum-X/Y/Z corner of the part as drawn.</li>
+   <li><b>DXF files</b> are 1:1 flat profiles for laser, plasma or waterjet. For rolled and folded parts the DXF is the developed blank; bend and roll data are on the part sheet.</li>
+   <li><b>Tolerances:</b> ISO 2768-m for machined features, +/-1 mm on sawn lengths, +/-2 mm on frame diagonals, unless the sheet says otherwise. Bearing seats, column fits and mould dimensions are toleranced on their sheets.</li>
+   <li><b>Structural steel:</b> S235JR for frames, S355J2 where noted (press, canopy, drum). Welds are fillet a3 on 3 mm sections, a4-a6 on plate, MAG process 135, visual inspection to ISO 5817 class C; class B and stress relief on the press crossheads.</li>
+   <li><b>Finish:</b> degrease, wire-brush, zinc-phosphate primer and two coats of enamel (frames green, hoppers orange, guards yellow as in the video). Canopy steel hot-dip galvanised if possible. Do not paint machined faces, bearing seats, mould surfaces or the inside of hoppers and drums.</li>
+   <li><b>Fasteners:</b> grade 8.8 zinc plated, 10.9 / 12.9 where stated. Typical torques dry: M8 25, M10 50, M12 85, M16 210, M20 410 N.m.</li>
+   <li><b>Interference check:</b> all 1,000+ placed solids were checked against each other (<span class="pn">cad_source/clash_check.py</span>). Nothing overlaps by more than 3 cm3; what remains are welded joints drawn with square-cut ends (canopy knee braces). Re-run the check after any change.</li>
+   <li><b>Purchased items</b> are modelled as envelopes. Check the real shaft, flange and foot dimensions of the unit you buy before drilling the mating part.</li>
+  </ul></div>`;
+}
+function buildFiles(){
+  $('#files').innerHTML = `<h1>Files in this package</h1>
+  <div class="grid two">
+   <div class="card"><h3 style="margin-top:0">Drawing sets (A3 PDF)</h3><p class="muted">Each set: ballooned assembly sheet with parts list, orthographic views, weldment sheets, then one sheet per part.</p>
+     <p><a class="btn" href="drawings/PLANT_general_arrangement.pdf" target="_blank">Plant general arrangement</a></p>
+     <table>${D.machines.map(m => `<tr><td class="pn">${m.code}</td><td>${esc(m.name)}</td><td><a href="drawings/${m.code}_drawing_set.pdf" target="_blank">PDF</a></td><td><a href="models/step/assemblies/${m.code}.step" download>STEP</a></td></tr>`).join('')}</table></div>
+   <div><div class="card"><h3 style="margin-top:0">3D models</h3>
+     <table class="kv">
+      <tr><td><a href="models/step/assemblies/PLANT_complete.step" download>models/step/assemblies/PLANT_complete.step</a></td><td>the whole plant as one STEP assembly with colours (opens in FreeCAD, Fusion, SolidWorks, Onshape...)</td></tr>
+      <tr><td>models/step/assemblies/</td><td>one STEP per machine and per weldment</td></tr>
+      <tr><td>models/step/parts/</td><td>one STEP solid per part number - the master geometry for machining</td></tr>
+      <tr><td>models/dxf/</td><td>flat 1:1 profiles for every plate and sheet part and every developed blank</td></tr>
+      <tr><td>models/stl/</td><td>meshes per part (3D printing of patterns, quick viewing)</td></tr>
+      <tr><td><a href="models/glb/plant.glb" download>models/glb/plant.glb</a></td><td>the whole plant for Blender, Windows 3D Viewer or web/AR viewers (metres, Y up)</td></tr>
+     </table></div>
+     <div class="card" style="margin-top:14px"><h3 style="margin-top:0">Documents and data</h3>
+     <table class="kv">
+      <tr><td><a href="docs/Manufacturing_Guide.md" target="_blank">docs/Manufacturing_Guide.md</a></td><td>design basis, build sequence, every machine and every part with its route</td></tr>
+      <tr><td><a href="docs/BOM_all_parts.csv" download>docs/BOM_all_parts.csv</a></td><td>bill of materials, opens in Excel</td></tr>
+      <tr><td><a href="docs/Cut_list_sections.csv" download>docs/Cut_list_sections.csv</a></td><td>saw cut list grouped by stock section</td></tr>
+      <tr><td><a href="docs/BOM_hardware.csv" download>docs/BOM_hardware.csv</a></td><td>fasteners and consumables</td></tr>
+      <tr><td>drawings/parts/*.svg</td><td>individual part sheets</td></tr>
+      <tr><td>images/</td><td>rendered views</td></tr>
+     </table></div>
+     <div class="card" style="margin-top:14px"><h3 style="margin-top:0">Parametric source</h3>
+     <p>The whole model is generated by Python + CadQuery scripts in <span class="pn">cad_source/</span>. Change a dimension there and rebuild every file, drawing and list:</p>
+     <pre style="background:#10221c;color:#d7f0e4;padding:10px;border-radius:8px;overflow:auto">pip install cadquery matplotlib pillow trimesh numpy
+python cad_source/build.py</pre></div></div>
+  </div>`;
+}
+
+/* ---------------- WebGL viewer */
+const V = (() => {
+  let gl, prog, loc = {}, parts = {}, inst = [], started = false, dirty = true, sel = -1, explode = 0;
+  const vis = {}; const cam = {az: 0.9, el: 0.45, dist: 22000, tx: 6000, ty: 1500, tz: 1200};
+  let pickFbo, pickTex, pickDepth, pw = 0, ph = 0;
+  const b64 = s => { const b = atob(s), u = new Uint8Array(b.length); for (let i = 0; i < b.length; i++) u[i] = b.charCodeAt(i); return u.buffer; };
+  function mul(a, b){ const o = new Float32Array(16); for (let c = 0; c < 4; c++) for (let r = 0; r < 4; r++){ let s = 0; for (let k = 0; k < 4; k++) s += a[k*4+r] * b[c*4+k]; o[c*4+r] = s; } return o; }
+  function persp(fovy, asp, n, f){ const t = 1 / Math.tan(fovy / 2), o = new Float32Array(16); o[0] = t / asp; o[5] = t; o[10] = (f + n) / (n - f); o[11] = -1; o[14] = 2 * f * n / (n - f); return o; }
+  function look(e, t){ let f = [t[0]-e[0], t[1]-e[1], t[2]-e[2]]; let l = Math.hypot(...f); f = f.map(x => x / l);
+    let s = [f[1]*1 - f[2]*0, f[2]*0 - f[0]*1, 0]; l = Math.hypot(...s) || 1; s = s.map(x => x / l);
+    const u = [s[1]*f[2] - s[2]*f[1], s[2]*f[0] - s[0]*f[2], s[0]*f[1] - s[1]*f[0]];
+    return new Float32Array([s[0], u[0], -f[0], 0, s[1], u[1], -f[1], 0, s[2], u[2], -f[2], 0, -(s[0]*e[0]+s[1]*e[1]+s[2]*e[2]), -(u[0]*e[0]+u[1]*e[1]+u[2]*e[2]), f[0]*e[0]+f[1]*e[1]+f[2]*e[2], 1]); }
+  function eye(){ const ce = Math.cos(cam.el); return [cam.tx + cam.dist * ce * Math.cos(cam.az), cam.ty + cam.dist * ce * Math.sin(cam.az), cam.tz + cam.dist * Math.sin(cam.el)]; }
+  function init(){
+    const cv = $('#cv'); gl = cv.getContext('webgl2', {antialias: true});
+    if (!gl) { $('#vhelp').textContent = 'WebGL2 is not available in this browser - open the STEP or GLB file instead.'; return false; }
+    const vs = `#version 300 es
+in vec3 p; uniform mat4 uVP, uM; out vec3 vW; void main(){ vec4 w = uM * vec4(p, 1.0); vW = w.xyz; gl_Position = uVP * w; }`;
+    const fs = `#version 300 es
+precision highp float; in vec3 vW; uniform vec4 uC; uniform float uPick, uHi; out vec4 o;
+void main(){ if (uPick > 0.5) { o = uC; return; }
+ vec3 n = normalize(cross(dFdx(vW), dFdy(vW))); vec3 L = normalize(vec3(0.35, 0.5, 0.8));
+ float d = abs(dot(n, L)); vec3 c = uC.rgb * (0.40 + 0.52 * d + 0.10 * (0.5 + 0.5 * n.z));
+ c = mix(c, vec3(1.0, 0.78, 0.1), uHi * 0.6); o = vec4(c, uC.a); }`;
+    const sh = (t, s) => { const x = gl.createShader(t); gl.shaderSource(x, s); gl.compileShader(x); if (!gl.getShaderParameter(x, gl.COMPILE_STATUS)) console.error(gl.getShaderInfoLog(x)); return x; };
+    prog = gl.createProgram(); gl.attachShader(prog, sh(gl.VERTEX_SHADER, vs)); gl.attachShader(prog, sh(gl.FRAGMENT_SHADER, fs)); gl.bindAttribLocation(prog, 0, 'p'); gl.linkProgram(prog); gl.useProgram(prog);
+    for (const n of ['uVP','uM','uC','uPick','uHi']) loc[n] = gl.getUniformLocation(prog, n);
+    for (const [pn, g] of Object.entries(G.parts)){
+      const v = new Float32Array(b64(g.v)), ix = new Uint32Array(b64(g.i));
+      const vao = gl.createVertexArray(); gl.bindVertexArray(vao);
+      const vb = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, vb); gl.bufferData(gl.ARRAY_BUFFER, v, gl.STATIC_DRAW); gl.enableVertexAttribArray(0); gl.vertexAttribPointer(0, 3, gl.FLOAT, false, 0, 0);
+      const ib = gl.createBuffer(); gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, ib); gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, ix, gl.STATIC_DRAW);
+      let mn = [1e9,1e9,1e9], mx = [-1e9,-1e9,-1e9]; for (let i = 0; i < v.length; i += 3) for (let k = 0; k < 3; k++){ mn[k] = Math.min(mn[k], v[i+k]); mx[k] = Math.max(mx[k], v[i+k]); }
+      parts[pn] = {vao, n: ix.length, c: g.c, a: g.a, ctr: mn.map((x, k) => (x + mx[k]) / 2), rad: Math.hypot(mx[0]-mn[0], mx[1]-mn[1], mx[2]-mn[2]) / 2};
+    }
+    const mc = {};
+    inst = G.inst.map((r, i) => { const t = r.t, m = new Float32Array([t[0],t[4],t[8],0, t[1],t[5],t[9],0, t[2],t[6],t[10],0, t[3],t[7],t[11],1]); const c = parts[r.p].ctr;
+      const w = [m[0]*c[0]+m[4]*c[1]+m[8]*c[2]+m[12], m[1]*c[0]+m[5]*c[1]+m[9]*c[2]+m[13], m[2]*c[0]+m[6]*c[1]+m[10]*c[2]+m[14]];
+      (mc[r.m] = mc[r.m] || {s: [0,0,0], n: 0}); for (let k = 0; k < 3; k++) mc[r.m].s[k] += w[k]; mc[r.m].n++;
+      return {id: i, m: r.m, p: r.p, w: r.w, M: m, c: w, part: parts[r.p]}; });
+    for (const it of inst){ const q = mc[it.m]; it.mc = q.s.map(x => x / q.n); }
+    inst.sort((a, b) => a.p < b.p ? -1 : a.p > b.p ? 1 : 0);
+    for (const m of D.machines) if (m.pos) vis[m.code] = true;
+    side(); events(cv); return true;
+  }
+  function side(){
+    $('#vside').innerHTML = `<b>Show / hide</b>
+     <p style="margin:.5em 0"><button class="btn sec" onclick="V.preset('all')">All</button><button class="btn sec" onclick="V.preset('line')">Line only</button><button class="btn sec" onclick="V.fit()">Fit</button></p>
+     ${D.machines.filter(m => m.pos).map(m => `<label title="${esc(m.name)}"><input type="checkbox" data-m="${m.code}" ${vis[m.code] ? 'checked' : ''}><span><b class="pn">${m.code}</b> ${esc(m.name.replace(/^Station \d\w? - /, ''))}</span><button class="solo" onclick="event.preventDefault();V.solo('${m.code}')">only</button></label>`).join('')}
+     <p style="margin:1em 0 .2em"><b>Explode</b></p><input type="range" id="vex" min="0" max="100" value="0" style="width:100%">
+     <p class="muted" style="font-size:12px">The container roof is drawn transparent. Click a part to see what it is, then open its sheet.</p>`;
+    $('#vside').querySelectorAll('input[type=checkbox]').forEach(c => c.addEventListener('change', () => { vis[c.dataset.m] = c.checked; dirty = true; }));
+    $('#vex').addEventListener('input', e => { explode = e.target.value / 100; dirty = true; });
+  }
+  function setVis(f){ for (const k in vis) vis[k] = f(k); side(); $('#vex').value = explode * 100; dirty = true; }
+  function fit(){ let mn = [1e9,1e9,1e9], mx = [-1e9,-1e9,-1e9], n = 0; for (const it of inst) if (vis[it.m] && it.p !== 'CT-001' && it.p !== 'CT-002'){ n++; for (let k = 0; k < 3; k++){ mn[k] = Math.min(mn[k], it.c[k] - it.part.rad * .6); mx[k] = Math.max(mx[k], it.c[k] + it.part.rad * .6); } }
+    if (!n) return; cam.tx = (mn[0]+mx[0])/2; cam.ty = (mn[1]+mx[1])/2; cam.tz = (mn[2]+mx[2])/2; cam.dist = Math.max(1500, Math.hypot(mx[0]-mn[0], mx[1]-mn[1], mx[2]-mn[2]) * 1.15); dirty = true; }
+  function modelM(it){ if (!explode) return it.M; const m = new Float32Array(it.M), k = explode * 1.6; for (let j = 0; j < 3; j++) m[12+j] += (it.c[j] - it.mc[j]) * k; return m; }
+  function draw(pick){
+    const cv = gl.canvas, dpr = Math.min(window.devicePixelRatio || 1, 2), w = Math.round(cv.clientWidth * dpr), h = Math.round(cv.clientHeight * dpr);
+    if (cv.width !== w || cv.height !== h){ cv.width = w; cv.height = h; }
+    if (pick){ if (pw !== w || ph !== h){ pw = w; ph = h; pickFbo = pickFbo || gl.createFramebuffer(); pickTex = pickTex || gl.createTexture(); pickDepth = pickDepth || gl.createRenderbuffer();
+        gl.bindTexture(gl.TEXTURE_2D, pickTex); gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA8, w, h, 0, gl.RGBA, gl.UNSIGNED_BYTE, null); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
+        gl.bindRenderbuffer(gl.RENDERBUFFER, pickDepth); gl.renderbufferStorage(gl.RENDERBUFFER, gl.DEPTH_COMPONENT24, w, h);
+        gl.bindFramebuffer(gl.FRAMEBUFFER, pickFbo); gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, pickTex, 0); gl.framebufferRenderbuffer(gl.FRAMEBUFFER, gl.DEPTH_ATTACHMENT, gl.RENDERBUFFER, pickDepth); }
+      gl.bindFramebuffer(gl.FRAMEBUFFER, pickFbo); } else gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+    gl.viewport(0, 0, w, h); gl.clearColor(0, 0, 0, 0); gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT); gl.enable(gl.DEPTH_TEST);
+    const VP = mul(persp(0.6, w / h, cam.dist * 0.02, cam.dist * 6 + 60000), look(eye(), [cam.tx, cam.ty, cam.tz]));
+    gl.uniformMatrix4fv(loc.uVP, false, VP); gl.uniform1f(loc.uPick, pick ? 1 : 0);
+    let last = null;
+    for (let pass = 0; pass < (pick ? 1 : 2); pass++){
+      if (pass === 1){ gl.enable(gl.BLEND); gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA); gl.depthMask(false); }
+      for (const it of inst){ if (!vis[it.m]) continue; const tr = it.part.a < 1; if (pick ? tr : (tr !== (pass === 1))) continue;
+        if (last !== it.part){ gl.bindVertexArray(it.part.vao); last = it.part; }
+        gl.uniformMatrix4fv(loc.uM, false, modelM(it));
+        if (pick){ const id = it.id + 1; gl.uniform4f(loc.uC, (id & 255) / 255, ((id >> 8) & 255) / 255, ((id >> 16) & 255) / 255, 1); }
+        else { gl.uniform4f(loc.uC, it.part.c[0], it.part.c[1], it.part.c[2], it.part.a); gl.uniform1f(loc.uHi, it.id === sel ? 1 : 0); }
+        gl.drawElements(gl.TRIANGLES, it.part.n, gl.UNSIGNED_INT, 0); }
+      if (pass === 1){ gl.disable(gl.BLEND); gl.depthMask(true); }
+    }
+  }
+  function pickAt(x, y){ draw(true); const cv = gl.canvas, r = cv.getBoundingClientRect(), sx = Math.floor((x - r.left) / r.width * cv.width), sy = Math.floor((1 - (y - r.top) / r.height) * cv.height), px = new Uint8Array(4);
+    gl.readPixels(sx, sy, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, px); gl.bindFramebuffer(gl.FRAMEBUFFER, null); const id = px[0] + (px[1] << 8) + (px[2] << 16) - 1; sel = id; dirty = true;
+    const box = $('#vinfo'); if (id < 0){ box.style.display = 'none'; return; }
+    const it = inst.find(i => i.id === id), p = D.parts[it.p], m = MACH[it.m];
+    box.style.display = 'block';
+    box.innerHTML = `<div class="pn" style="color:var(--mut)">${it.p}${it.w ? ' · in ' + it.w : ''}</div><b>${esc(p.name)}</b><div class="muted">${esc(p.mat)} · ${esc(D.procname[p.proc] || p.proc)} · qty ${p.qty}${p.kg != null ? ' · ' + fmt(p.kg, 2) + ' kg' : ''}</div>
+      <div style="margin-top:6px"><button class="btn" onclick="openPart('${it.p}')">Part sheet + how to make</button><button class="btn sec" onclick="show('machines','${it.m}')">${it.m}: ${esc(m.name.replace(/^Station \d\w? - /, ''))}</button></div>`; }
+  function events(cv){ let drag = null, moved = 0;
+    cv.addEventListener('contextmenu', e => e.preventDefault());
+    cv.addEventListener('pointerdown', e => { drag = {x: e.clientX, y: e.clientY, pan: e.button !== 0 || e.shiftKey}; moved = 0; cv.setPointerCapture(e.pointerId); cv.style.cursor = 'grabbing'; });
+    cv.addEventListener('pointermove', e => { if (!drag) return; const dx = e.clientX - drag.x, dy = e.clientY - drag.y; drag.x = e.clientX; drag.y = e.clientY; moved += Math.abs(dx) + Math.abs(dy);
+      if (drag.pan){ const k = cam.dist / cv.clientHeight * 1.1, sa = Math.sin(cam.az), ca = Math.cos(cam.az); cam.tx += (sa * dx + ca * Math.sin(cam.el) * dy) * k; cam.ty += (-ca * dx + sa * Math.sin(cam.el) * dy) * k; cam.tz += Math.cos(cam.el) * dy * k; }
+      else { cam.az -= dx * 0.006; cam.el = Math.max(-1.5, Math.min(1.5, cam.el + dy * 0.006)); } dirty = true; });
+    cv.addEventListener('pointerup', e => { cv.style.cursor = 'grab'; if (drag && moved < 5 && e.button === 0) pickAt(e.clientX, e.clientY); drag = null; });
+    cv.addEventListener('wheel', e => { e.preventDefault(); cam.dist = Math.max(300, Math.min(120000, cam.dist * Math.exp(e.deltaY * 0.0012))); dirty = true; }, {passive: false});
+    new ResizeObserver(() => dirty = true).observe(cv); }
+  function loop(){ if (dirty && $('#model').classList.contains('on')){ dirty = false; draw(false); } requestAnimationFrame(loop); }
+  return {
+    start(){ if (!started){ started = true; if (!init()) return; fit(); cam.az = 1.05; cam.el = 0.42; loop(); } dirty = true; },
+    preset(k){ if (!started) this.start(); setVis(c => k === 'all' ? true : !['SC','CT','EL','TT'].includes(c)); fit(); },
+    solo(code){ if (!started) this.start(); setVis(c => c === code); fit(); },
+    fit, _cam: cam, _redraw(){ dirty = true; }
+  };
+})();
+
+buildOverview(); buildParts(); buildGuide(); buildFiles();
+const h = location.hash.slice(1).split('/');
+show(TABS.some(t => t[0] === h[0]) ? h[0] : 'overview', h[1]);
+</script>
+</body>
+</html>

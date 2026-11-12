@@ -1,0 +1,86 @@
+﻿Assembly,Assembly name,Item,Qty
+CT,Container shell conversion (40 ft high-cube),Concrete pad 600 x 600 x 300 (container supports),6
+CT,Container shell conversion (40 ft high-cube),"Epoxy floor paint, 30 m2 two coats + yellow line paint",1
+CT,Container shell conversion (40 ft high-cube),"First-aid kit, burns kit and eyewash station",1
+CT,Container shell conversion (40 ft high-cube),"Angle 30x30x3 for louvre frames, 8 m",1
+ST,Station 1a - Sorting table,M6x50 countersunk screw + rivet nut,8
+ST,Station 1a - Sorting table,M12x100 floor anchor / through bolt,8
+SH,Station 1b - Low-speed shredder,"M12x40 hex bolt 8.8 + nut + washers (chamber flange to deck, hopper flange)",12
+SH,Station 1b - Low-speed shredder,M12x45 hex bolt 8.8 + nyloc nut (UCF207 bearing units),8
+SH,Station 1b - Low-speed shredder,M10x25 socket cap screw 12.9 (comb to support angle),6
+SH,Station 1b - Low-speed shredder,Parallel key 10x8x160,1
+SH,Station 1b - Low-speed shredder,M12x100 floor anchor,8
+SF-300,Elevating screw (45 deg),M10x35 hex bolt 8.8 + nyloc nut + 2 washers (bearing units),8
+SF-300,Elevating screw (45 deg),Spring pin dia 8 x 40 (stub shafts),4
+SF-300,Elevating screw (45 deg),Parallel key 8x7x90,1
+SF-300,Elevating screw (45 deg),Torque-arm bolt M10x60 + rubber bush,1
+SF-400,Overhead transfer screw,M10x35 hex bolt 8.8 + nyloc nut + 2 washers (bearing units),8
+SF-400,Overhead transfer screw,Spring pin dia 8 x 40 (stub shafts),4
+SF-400,Overhead transfer screw,Parallel key 8x7x90,1
+SF-400,Overhead transfer screw,Torque-arm bolt M10x60 + rubber bush,1
+SF,Station 2a - Sand receiving hopper and feed screws,"M12x40 hex bolt + nut + washers (hopper rim to stand, boot flange)",16
+SF,Station 2a - Sand receiving hopper and feed screws,U-bolt M12 for OD 114 tube,2
+SF,Station 2a - Sand receiving hopper and feed screws,M16x150 chemical / wedge anchor into concrete pad (stand and posts),16
+DR,Station 2b - Rotary sand dryer,M10x60 hex bolt + nut (UCP204 to risers),16
+DR,Station 2b - Rotary sand dryer,Pin dia 16 x 110 with split pins (cradle pivot),2
+DR,Station 2b - Rotary sand dryer,Parallel key 6x6x100,1
+DR,Station 2b - Rotary sand dryer,M8x12 grub screw (rollers),8
+DR,Station 2b - Rotary sand dryer,"Mineral wool 25 mm foil faced, 0.6 m2 (cowl lining)",1
+DR,Station 2b - Rotary sand dryer,PT100 air temperature sensor + PID controller (heater),1
+DR,Station 2b - Rotary sand dryer,M12x100 floor anchor,8
+VS,Station 2c - Vibrating screen,M6x16 pan-head screw (mesh clamp strips),12
+VS,Station 2c - Vibrating screen,M10x35 bolt + nyloc + spring washer (vibrator),4
+VS,Station 2c - Vibrating screen,M8x40 stud (spring location),8
+VS,Station 2c - Vibrating screen,M12x100 floor anchor,8
+DC,Station 2d - Cartridge dust collector,M6 wing nut + stud (door),8
+DC,Station 2d - Cartridge dust collector,"EPDM gasket 20x5, 2.3 m",1
+DC,Station 2d - Cartridge dust collector,"Flexible PU ducting dia 125, 4 m, with 4 hose clamps and one Y-branch 125/125/125",1
+WB-600,Batch incline screw (45 deg),M10x35 hex bolt 8.8 + nyloc nut + 2 washers (bearing units),8
+WB-600,Batch incline screw (45 deg),Spring pin dia 8 x 40 (stub shafts),4
+WB-600,Batch incline screw (45 deg),Parallel key 8x7x90,1
+WB-600,Batch incline screw (45 deg),Torque-arm bolt M10x60 + rubber bush,1
+WB,Station 3 - Weigh batcher,M8x40 socket cap screw (load cells),8
+WB,Station 3 - Weigh batcher,M10 U-bolt for OD 114 tube,1
+WB,Station 3 - Weigh batcher,Stainless hand scoop 2 L,2
+WB,Station 3 - Weigh batcher,M12x100 floor anchor,12
+WB,Station 3 - Weigh batcher,Shielded load-cell cable gland + junction box,2
+MX,Station 4 - Heated batch mixer,"Ceramic-fibre blanket 50 mm, 128 kg/m3, 1.2 m2",1
+MX,Station 4 - Heated batch mixer,"Thermocouple type K, bayonet, with 3 m lead (1 wall, 1 melt probe through the rear lid)",2
+MX,Station 4 - Heated batch mixer,M12x40 bolt + nut + ceramic washer (drum standoffs),4
+MX,Station 4 - Heated batch mixer,M12x40 bolt + nut (bridge columns),8
+MX,Station 4 - Heated batch mixer,M12x90 bolt 10.9 + nyloc nut (paddle hub cross bolt),1
+MX,Station 4 - Heated batch mixer,Parallel key 12x8x160,1
+MX,Station 4 - Heated batch mixer,Lid safety limit switch,1
+MX,Station 4 - Heated batch mixer,M12x100 floor anchor,8
+RC,"Mould handling - roller tables, return line, charge station",M12x100 floor anchor,24
+RC,"Mould handling - roller tables, return line, charge station",M8x25 bolt + nut (roller rails to frames),24
+RC,"Mould handling - roller tables, return line, charge station","Heat-resistant gloves, 250 C contact (pairs)",4
+HP,"Station 5 - Two-cavity hydraulic press, 1000 kN",M20x110 hex bolt 10.9 + hardened washers (cylinder flange to crown),8
+HP,"Station 5 - Two-cavity hydraulic press, 1000 kN",M20x70 socket cap screw 12.9 (rod flange to platen),6
+HP,"Station 5 - Two-cavity hydraulic press, 1000 kN",M16x50 socket cap screw 12.9 (bolsters),12
+HP,"Station 5 - Two-cavity hydraulic press, 1000 kN",M12x50 socket cap screw 12.9 (punches to upper bolster),12
+HP,"Station 5 - Two-cavity hydraulic press, 1000 kN",M12 shoulder bolt (end stop pivot),1
+HP,"Station 5 - Two-cavity hydraulic press, 1000 kN","Hydraulic hoses 2 x 1/2 in, 280 bar, with fittings",2
+HP,"Station 5 - Two-cavity hydraulic press, 1000 kN","Hydraulic oil ISO VG 46, 60 l",1
+HP,"Station 5 - Two-cavity hydraulic press, 1000 kN","M16x150 anchor (base frame to floor, through to container cross-members)",8
+CR,Station 6 - Cooling rack,M12x100 floor anchor,8
+CR,Station 6 - Cooling rack,"Wall fixing bracket + M10 bolts (anti-tip, top rail to container wall)",2
+TR,"Station 7 - Guarded trim, check and stack station",M5x16 button-head screw + washer (guard panels),40
+TR,"Station 7 - Guarded trim, check and stack station",Go / no-go gauge: tile must sit flat on the table top without rocking more than 3 mm,1
+TR,"Station 7 - Guarded trim, check and stack station",M12x100 floor anchor,8
+EL,"Power system - inverter, battery, distribution, generator","Armoured cable 5 x 10 mm2 (DB to inverter), 12 m",1
+EL,"Power system - inverter, battery, distribution, generator","Cable tray 100 mm along the back wall at 2.55 m, 12 m, with drops to each machine",1
+EL,"Power system - inverter, battery, distribution, generator","Machine supply cables H07RN-F, sizes per load schedule",1
+EL,"Power system - inverter, battery, distribution, generator","Earth electrode 2 x 2.4 m copper-clad rods + 16 mm2 main earth; bond container, canopy and every machine frame",1
+EL,"Power system - inverter, battery, distribution, generator",Emergency-stop loop: buttons at every station wired in series to the main contactor,1
+SC,Solar canopy 19.8 kWp,"M20x300 chemical anchor (post base plates, 4 per post)",32
+SC,Solar canopy 19.8 kWp,"Concrete footing 800 x 800 x 800, C25/30 (verify for local wind and soil)",8
+SC,Solar canopy 19.8 kWp,PV mid clamp 35 mm with M8 T-bolt,60
+SC,Solar canopy 19.8 kWp,PV end clamp 35 mm with M8 T-bolt,24
+SC,Solar canopy 19.8 kWp,M12x150 hex bolt 8.8 through purlin + nut + washers,84
+SC,Solar canopy 19.8 kWp,M16x60 hex bolt 8.8 (post caps),32
+SC,Solar canopy 19.8 kWp,Turnbuckle M16 + clevis,6
+SC,Solar canopy 19.8 kWp,"Solar cable 6 mm2 red/black, 200 m; MC4 connectors 80 pairs",1
+SC,Solar canopy 19.8 kWp,"Earth bonding strap + lug per module row, 16 mm2 Cu to earth rod",1
+TT,Tile test rig (transverse breaking load),M16 rod coupler (ram to nose holder),1
+TT,Tile test rig (transverse breaking load),"Steel rule and dial gauge (deflection reading, optional)",1

@@ -1,0 +1,332 @@
+﻿Part number,Name,Machine,Make/Buy,Qty (plant),Material,Stock / specification,Process,Mass each kg,Mass total kg,Size X mm,Size Y mm,Size Z mm,STEP file,DXF file,Drawing
+CM-CLAMP114,Pipe clamp DN100 with M12 hanger rod,CM,BUY,2,Purchased,"Two-piece steel pipe clamp for OD 114.3, M12 boss, with M12 threaded rod 500 mm and roof/beam fixing",BUY,1.2,2.4,30.0,126.0,605.0,models/step/parts/CM-CLAMP114.step,,drawings/parts/CM-CLAMP114.svg
+CM-CTRL200,Local control station 200x300x150,CM,BUY,4,Purchased,"Steel enclosure IP65 200x300x150 with start/stop, mushroom E-stop (EN ISO 13850), motor starter / contactor with overload, lockable isolator",BUY,4,16,200.0,158.0,300.0,models/step/parts/CM-CTRL200.step,,drawings/parts/CM-CTRL200.svg
+CM-F98-80,"Screw flight segment dia 98/34, pitch 80",CM,MAKE,104,S355J2,Plate 4 mm,FLIGHT,0.21,21.8,84.0,98.0,98.0,models/step/parts/CM-F98-80.step,models/dxf/CM-F98-80.dxf,drawings/parts/CM-F98-80.svg
+CM-G037-20-22,"Gearmotor 0.37 kW, 22 rpm, hollow shaft dia 20",CM,BUY,1,Purchased,"Shaft-mounted worm/helical gearmotor 0.37 kW, 400 V 3-ph 50 Hz, output approx. 22 rpm, hollow bore 20 H7 with keyway, torque arm, IP55",BUY,12,12,125.0,150.0,340.0,models/step/parts/CM-G037-20-22.step,,drawings/parts/CM-G037-20-22.svg
+CM-G037-25-90,"Gearmotor 0.37 kW, 90 rpm, hollow shaft dia 25",CM,BUY,2,Purchased,"Shaft-mounted worm/helical gearmotor 0.37 kW, 400 V 3-ph 50 Hz, output approx. 90 rpm, hollow bore 25 H7 with keyway, torque arm, IP55",BUY,12,24,125.0,150.0,340.0,models/step/parts/CM-G037-25-90.step,,drawings/parts/CM-G037-25-90.svg
+CM-G075-25-120,"Gearmotor 0.75 kW, 120 rpm, hollow shaft dia 25",CM,BUY,1,Purchased,"Shaft-mounted worm/helical gearmotor 0.75 kW, 400 V 3-ph 50 Hz, output approx. 120 rpm, hollow bore 25 H7 with keyway, torque arm, IP55",BUY,20,20,145.0,176.5,410.0,models/step/parts/CM-G075-25-120.step,,drawings/parts/CM-G075-25-120.svg
+CM-G220-40-30,"Gearmotor 2.2 kW, 30 rpm, hollow shaft dia 40",CM,BUY,1,Purchased,"Shaft-mounted worm/helical gearmotor 2.2 kW, 400 V 3-ph 50 Hz, output approx. 30 rpm, hollow bore 40 H7 with keyway, torque arm, IP55",BUY,45,45,180.0,226.0,530.0,models/step/parts/CM-G220-40-30.step,,drawings/parts/CM-G220-40-30.svg
+CM-G400-35-70,"Gearmotor 4 kW, 70 rpm, hollow shaft dia 35",CM,BUY,1,Purchased,"Shaft-mounted worm/helical gearmotor 4 kW, 400 V 3-ph 50 Hz, output approx. 70 rpm, hollow bore 35 H7 with keyway, torque arm, IP55",BUY,70,70,220.0,274.0,620.0,models/step/parts/CM-G400-35-70.step,,drawings/parts/CM-G400-35-70.svg
+CM-ROLL900,Gravity roller dia 50 x 900,CM,BUY,21,Purchased,"Steel gravity conveyor roller dia 50 x 1.5, face length 900, spring-loaded axle dia 12 (hex 11), precision bearings, 60 kg rating",BUY,3.4,71.4,930.0,50.0,50.0,models/step/parts/CM-ROLL900.step,,drawings/parts/CM-ROLL900.svg
+CM-SCALE15,Bench scale 15 kg x 5 g,CM,BUY,1,Purchased,"Stainless bench scale, 15 kg capacity, 5 g resolution, platform approx. 350 x 300 mm, IP65",BUY,4,4,350.0,300.0,55.0,models/step/parts/CM-SCALE15.step,,drawings/parts/CM-SCALE15.svg
+CM-TOTE60,Stacking tote 600x400x320 (60 L),CM,BUY,3,Purchased,"Euro stacking container 600 x 400 x 320 mm, solid walls, PP, blue",BUY,2.6,7.8,600.0,400.0,320.0,models/step/parts/CM-TOTE60.step,,drawings/parts/CM-TOTE60.svg
+CM-UCF205,Flange bearing unit UCF205 (shaft 25),CM,BUY,6,Purchased,"UCF205 4-bolt flanged insert bearing unit, bore 25 mm, grub-screw locking",BUY,0.8,4.8,36.0,95.0,95.0,models/step/parts/CM-UCF205.step,,drawings/parts/CM-UCF205.svg
+CM-UCF207,Flange bearing unit UCF207 (shaft 35),CM,BUY,2,Purchased,"UCF207 4-bolt flanged insert bearing unit, bore 35 mm, grub-screw locking",BUY,1.5,3.0,44.0,117.0,117.0,models/step/parts/CM-UCF207.step,,drawings/parts/CM-UCF207.svg
+CM-UCF208,Flange bearing unit UCF208 (shaft 40),CM,BUY,1,Purchased,"UCF208 4-bolt flanged insert bearing unit, bore 40 mm, grub-screw locking",BUY,1.9,1.9,51.0,130.0,130.0,models/step/parts/CM-UCF208.step,,drawings/parts/CM-UCF208.svg
+CM-UCP204,Pillow block bearing UCP204 (shaft 20),CM,BUY,8,Purchased,"UCP204 pillow block insert bearing unit, bore 20 mm",BUY,0.65,5.2,38.0,127.0,61.6,models/step/parts/CM-UCP204.step,,drawings/parts/CM-UCP204.svg
+CR-101,Cooling rack frame - leg,CR,MAKE,4,S235JR,SHS 40x40x3,SAW,6.25,25.0,1792.0,40.0,40.0,models/step/parts/CR-101.step,,drawings/parts/CR-101.svg
+CR-102,Cooling rack frame - long rail,CR,MAKE,7,S235JR,SHS 40x40x3,SAW,1.67,11.7,480.0,40.0,40.0,models/step/parts/CR-102.step,,drawings/parts/CR-102.svg
+CR-103,Cooling rack frame - cross rail,CR,MAKE,4,S235JR,SHS 40x40x3,SAW,2.86,11.4,820.0,40.0,40.0,models/step/parts/CR-103.step,,drawings/parts/CR-103.svg
+CR-104,Cooling rack frame - foot plate,CR,MAKE,4,S235JR,Plate 8 mm,LASER,0.47,1.9,60.0,130.0,8.0,models/step/parts/CR-104.step,models/dxf/CR-104.dxf,drawings/parts/CR-104.svg
+CR-201,Shelf runner,CR,MAKE,8,S235JR,Angle 40x40x4,SAW,1.96,15.7,820.0,40.0,40.0,models/step/parts/CR-201.step,,drawings/parts/CR-201.svg
+CT-001,"40 ft high-cube container, modified",CT,BUY,1,Purchased,"ISO 1AAA container 12.19 x 2.44 x 2.90 m, cargo-worthy",MOD,3900,3900,12192.0,2438.0,2860.0,models/step/parts/CT-001.step,,drawings/parts/CT-001.svg
+CT-002,"Container roof (part of CT-001, kept)",CT,BUY,1,Purchased,part of container,BUY,0,0,12192.0,2438.0,36.0,models/step/parts/CT-002.step,,drawings/parts/CT-002.svg
+CT-101,Front header beam,CT,MAKE,1,S355J2,RHS 200x100x6,SAW,326.42,326.4,12032.0,100.0,200.0,models/step/parts/CT-101.step,,drawings/parts/CT-101.svg
+CT-102,Front opening post,CT,MAKE,3,S355J2,SHS 100x100x5,SAW,35.95,107.9,2410.0,100.0,100.0,models/step/parts/CT-102.step,,drawings/parts/CT-102.svg
+CT-103,Post end plate,CT,MAKE,6,S235JR,Plate 10 mm,LASER,3.09,18.5,200.0,200.0,10.0,models/step/parts/CT-103.step,models/dxf/CT-103.dxf,drawings/parts/CT-103.svg
+CT-201,Weather louvre 500 x 400,CT,BUY,4,Purchased,"Aluminium weather louvre 500 x 400 with insect mesh, flanged frame",BUY,3,12,540.0,45.0,440.0,models/step/parts/CT-201.step,,drawings/parts/CT-201.svg
+CT-202,Wall axial fan dia 500,CT,BUY,3,Purchased,"Plate-mounted axial exhaust fan dia 500, approx. 6000 m3/h, 0.25 kW, IP55, with finger guard and gravity shutter",BUY,9,27,540.0,120.0,540.0,models/step/parts/CT-202.step,,drawings/parts/CT-202.svg
+CT-203,"LED batten 1500 mm, 50 W",CT,BUY,6,Purchased,"IP65 LED batten 1.5 m, 50 W, 4000 K, approx. 6500 lm (target 300 lux on the work surfaces)",BUY,2,12,1500.0,80.0,60.0,models/step/parts/CT-203.step,,drawings/parts/CT-203.svg
+CT-204,Fire extinguisher 6 kg ABC + CO2 2 kg set,CT,BUY,2,Purchased,"6 kg ABC powder + 2 kg CO2 extinguisher, wall brackets, sign",BUY,12,24,150.0,150.0,500.0,models/step/parts/CT-204.step,,drawings/parts/CT-204.svg
+DC-101,Dust collector stand - leg,DC,MAKE,4,S235JR,SHS 30x30x2.5,SAW,1.06,4.2,489.0,30.0,30.0,models/step/parts/DC-101.step,,drawings/parts/DC-101.svg
+DC-102,Dust collector stand - long rail,DC,MAKE,3,S235JR,SHS 30x30x2.5,SAW,0.84,2.5,390.0,30.0,30.0,models/step/parts/DC-102.step,,drawings/parts/DC-102.svg
+DC-103,Dust collector stand - cross rail,DC,MAKE,4,S235JR,SHS 30x30x2.5,SAW,0.84,3.4,390.0,30.0,30.0,models/step/parts/DC-103.step,,drawings/parts/DC-103.svg
+DC-104,Dust collector stand - foot plate,DC,MAKE,4,S235JR,Plate 8 mm,LASER,0.36,1.4,50.0,120.0,8.0,models/step/parts/DC-104.step,models/dxf/DC-104.dxf,drawings/parts/DC-104.svg
+DC-201,Dust collector body - top plate,DC,MAKE,1,DC01 galv.,Plate 2 mm,LASER,2.69,2.7,450.0,450.0,2.0,models/step/parts/DC-201.step,models/dxf/DC-201.dxf,drawings/parts/DC-201.svg
+DC-202,Dust collector body - front plate,DC,MAKE,1,DC01 galv.,Plate 2 mm,LASER,3.73,3.7,450.0,996.0,2.0,models/step/parts/DC-202.step,models/dxf/DC-202.dxf,drawings/parts/DC-202.svg
+DC-203,Dust collector body - back plate,DC,MAKE,1,DC01 galv.,Plate 2 mm,LASER,7.04,7.0,450.0,996.0,2.0,models/step/parts/DC-203.step,models/dxf/DC-203.dxf,drawings/parts/DC-203.svg
+DC-204,Dust collector body - left plate,DC,MAKE,1,DC01 galv.,Plate 2 mm,LASER,6.78,6.8,446.0,996.0,2.0,models/step/parts/DC-204.step,models/dxf/DC-204.dxf,drawings/parts/DC-204.svg
+DC-205,Dust collector body - right plate,DC,MAKE,1,DC01 galv.,Plate 2 mm,LASER,6.97,7.0,446.0,996.0,2.0,models/step/parts/DC-205.step,models/dxf/DC-205.dxf,drawings/parts/DC-205.svg
+DC-210,Service door,DC,MAKE,1,DC01 galv.,Plate 2 mm,LASER,4.27,4.3,400.0,680.0,2.0,models/step/parts/DC-210.step,models/dxf/DC-210.dxf,drawings/parts/DC-210.svg
+DC-301,Dust hopper - front/back panel,DC,MAKE,2,DC01 galv.,Sheet 2 mm,LASER,1.03,2.1,380.0,246.5,2.0,models/step/parts/DC-301.step,models/dxf/DC-301.dxf,drawings/parts/DC-301.svg
+DC-302,Dust hopper - side panel,DC,MAKE,2,DC01 galv.,Sheet 2 mm,LASER,1.03,2.1,380.0,246.5,2.0,models/step/parts/DC-302.step,models/dxf/DC-302.dxf,drawings/parts/DC-302.svg
+DC-304,Hopper flange ring,DC,MAKE,1,DC01 galv.,Plate 3 mm,LASER,1.37,1.4,450.0,450.0,3.0,models/step/parts/DC-304.step,models/dxf/DC-304.dxf,drawings/parts/DC-304.svg
+DC-401,Filter cartridge dia 325 x 600,DC,BUY,1,Purchased,"Pleated polyester cartridge, OD 325 x 600, approx. 10 m2, flange top, M class (EN 60335-2-69) or better",BUY,4,4,325.0,325.0,600.0,models/step/parts/DC-401.step,,drawings/parts/DC-401.svg
+DC-402,Centrifugal fan 0.75 kW,DC,BUY,1,Purchased,"Radial fan 0.75 kW 2-pole, approx. 1000 m3/h at 1500 Pa, vertical shaft, inlet dia 200",BUY,22,22,530.0,420.0,400.0,models/step/parts/DC-402.step,,drawings/parts/DC-402.svg
+DC-403,Dust bucket 30 L,DC,BUY,1,Purchased,Steel dust bucket 30 L with quick-release band clamp,BUY,2,2,300.0,300.0,250.0,models/step/parts/DC-403.step,,drawings/parts/DC-403.svg
+DR-101,Dryer frame - leg,DR,MAKE,4,S235JR,SHS 60x60x3,SAW,4.57,18.3,852.0,60.0,60.0,models/step/parts/DR-101.step,,drawings/parts/DR-101.svg
+DR-102,Dryer frame - long rail,DR,MAKE,6,S235JR,SHS 60x60x3,SAW,7.62,45.7,1420.0,60.0,60.0,models/step/parts/DR-102.step,,drawings/parts/DR-102.svg
+DR-103,Dryer frame - cross rail,DR,MAKE,6,S235JR,SHS 60x60x3,SAW,3.11,18.7,580.0,60.0,60.0,models/step/parts/DR-103.step,,drawings/parts/DR-103.svg
+DR-104,Dryer frame - foot plate,DR,MAKE,4,S235JR,Plate 8 mm,LASER,0.73,2.9,80.0,150.0,8.0,models/step/parts/DR-104.step,models/dxf/DR-104.dxf,drawings/parts/DR-104.svg
+DR-105,Dryer frame - jack cross rail,DR,MAKE,1,S235JR,SHS 60x60x3,SAW,3.11,3.1,580.0,60.0,60.0,models/step/parts/DR-105.step,,drawings/parts/DR-105.svg
+DR-201,Cradle rail,DR,MAKE,2,S235JR,RHS 80x40x3,SAW,7.52,15.0,1400.0,80.0,40.0,models/step/parts/DR-201.step,,drawings/parts/DR-201.svg
+DR-202,Cradle end beam,DR,MAKE,2,S235JR,RHS 80x40x3,SAW,3.22,6.4,600.0,80.0,40.0,models/step/parts/DR-202.step,,drawings/parts/DR-202.svg
+DR-203,Bearing riser block,DR,MAKE,8,S235JR,RHS 80x40x3,SAW,0.38,3.0,70.0,80.0,40.0,models/step/parts/DR-203.step,,drawings/parts/DR-203.svg
+DR-204,Trunnion roller (plain),DR,MAKE,2,C45,Round bar dia 125,TURN,4.32,8.6,50.0,120.0,120.0,models/step/parts/DR-204.step,,drawings/parts/DR-204.svg
+DR-205,Drive shaft dia 20,DR,MAKE,1,C45,Round bar dia 20 h9 bright,TURN,2.74,2.7,1120.0,20.0,20.0,models/step/parts/DR-205.step,,drawings/parts/DR-205.svg
+DR-206,Idler shaft dia 20,DR,MAKE,1,C45,Round bar dia 20,SAW,2.47,2.5,1000.0,20.0,20.0,models/step/parts/DR-206.step,,drawings/parts/DR-206.svg
+DR-207,"Trunnion roller (flanged, thrust)",DR,MAKE,2,C45,Round bar dia 145,TURN,5.52,11.0,58.0,140.0,140.0,models/step/parts/DR-207.step,,drawings/parts/DR-207.svg
+DR-211,Cradle pivot block,DR,MAKE,2,S235JR,Flat bar 30x30,MILL,0.43,0.9,80.0,30.0,30.0,models/step/parts/DR-211.step,,drawings/parts/DR-211.svg
+DR-301,Drum shell,DR,MAKE,1,S235JR,Sheet 3 mm,ROLL,41.12,41.1,1400.0,400.0,400.0,models/step/parts/DR-301.step,models/dxf/DR-301.dxf,drawings/parts/DR-301.svg
+DR-302,Riding ring,DR,MAKE,2,S355J2,Flat bar 40x20,ROLL,8.29,16.6,40.0,440.0,440.0,models/step/parts/DR-302.step,models/dxf/DR-302.dxf,drawings/parts/DR-302.svg
+DR-303,Lifter flight,DR,MAKE,8,S235JR,Angle 30x30x3,SAW,1.61,12.9,1200.0,30.0,30.0,models/step/parts/DR-303.step,,drawings/parts/DR-303.svg
+DR-304,Feed-end dam ring,DR,MAKE,1,S235JR,Plate 3 mm,LASER,2.13,2.1,394.0,394.0,3.0,models/step/parts/DR-304.step,models/dxf/DR-304.dxf,drawings/parts/DR-304.svg
+DR-305,Discharge-end dam ring,DR,MAKE,1,S235JR,Plate 3 mm,LASER,0.98,1.0,394.0,394.0,3.0,models/step/parts/DR-305.step,models/dxf/DR-305.dxf,drawings/parts/DR-305.svg
+DR-401,Insulated drum cowl,DR,MAKE,1,DC01 galv.,Sheet 1.5 mm,ROLL,6.97,7.0,700.0,540.0,270.0,models/step/parts/DR-401.step,models/dxf/DR-401.dxf,drawings/parts/DR-401.svg
+DR-402,Cowl stay,DR,MAKE,4,S235JR,Flat bar 30x5,BEND,0.48,1.9,95.0,30.0,315.8,models/step/parts/DR-402.step,models/dxf/DR-402.dxf,drawings/parts/DR-402.svg
+DR-501,Feed hood - top plate,DR,MAKE,1,S235JR,Plate 2 mm,LASER,1.74,1.7,300.0,460.0,2.0,models/step/parts/DR-501.step,models/dxf/DR-501.dxf,drawings/parts/DR-501.svg
+DR-502,Feed hood - bottom plate,DR,MAKE,1,S235JR,Plate 2 mm,LASER,2.17,2.2,300.0,460.0,2.0,models/step/parts/DR-502.step,models/dxf/DR-502.dxf,drawings/parts/DR-502.svg
+DR-503,Feed hood - front plate,DR,MAKE,1,S235JR,Plate 2 mm,LASER,1.64,1.6,300.0,456.0,2.0,models/step/parts/DR-503.step,models/dxf/DR-503.dxf,drawings/parts/DR-503.svg
+DR-504,Feed hood - back plate,DR,MAKE,1,S235JR,Plate 2 mm,LASER,2.15,2.1,300.0,456.0,2.0,models/step/parts/DR-504.step,models/dxf/DR-504.dxf,drawings/parts/DR-504.svg
+DR-505,Feed hood - left plate,DR,MAKE,1,S235JR,Plate 2 mm,LASER,3.26,3.3,456.0,456.0,2.0,models/step/parts/DR-505.step,models/dxf/DR-505.dxf,drawings/parts/DR-505.svg
+DR-506,Feed hood - right plate,DR,MAKE,1,S235JR,Plate 2 mm,LASER,1.17,1.2,456.0,456.0,2.0,models/step/parts/DR-506.step,models/dxf/DR-506.dxf,drawings/parts/DR-506.svg
+DR-510,Feed inlet collar,DR,MAKE,1,DC01 galv.,Sheet 2 mm,BEND,1.53,1.5,164.0,164.0,150.0,models/step/parts/DR-510.step,models/dxf/DR-510.dxf,drawings/parts/DR-510.svg
+DR-511,Feed deflector plate,DR,MAKE,1,S235JR,Plate 2 mm,LASER,0.94,0.9,300.0,200.0,2.0,models/step/parts/DR-511.step,models/dxf/DR-511.dxf,drawings/parts/DR-511.svg
+DR-512,Feed hood post,DR,MAKE,2,S235JR,SHS 40x40x3,SAW,0.83,1.7,237.0,40.0,40.0,models/step/parts/DR-512.step,,drawings/parts/DR-512.svg
+DR-601,Duct air heater 4.5 kW,DR,BUY,1,Purchased,"Finned electric duct heater 4.5 kW, 400 V 3-ph, 200 x 200 mm duct, with over-temperature cut-out and air-flow interlock; outlet air 150-200 C",BUY,9,9,200.0,250.0,200.0,models/step/parts/DR-601.step,,drawings/parts/DR-601.svg
+DR-602,Centrifugal blower 0.18 kW,DR,BUY,1,Purchased,"Centrifugal blower 0.18 kW, approx. 400 m3/h at 300 Pa, 200 x 200 outlet flange",BUY,8,8,240.0,260.0,240.0,models/step/parts/DR-602.step,,drawings/parts/DR-602.svg
+DR-701,Discharge hood - top plate,DR,MAKE,1,S235JR,Plate 2 mm,LASER,1.69,1.7,230.0,520.0,2.0,models/step/parts/DR-701.step,models/dxf/DR-701.dxf,drawings/parts/DR-701.svg
+DR-702,Discharge hood - front/back plate,DR,MAKE,2,S235JR,Plate 2 mm,LASER,2.01,4.0,230.0,556.0,2.0,models/step/parts/DR-702.step,models/dxf/DR-702.dxf,drawings/parts/DR-702.svg
+DR-703,Discharge hood - left plate,DR,MAKE,1,S235JR,Plate 2 mm,LASER,2.29,2.3,516.0,556.0,2.0,models/step/parts/DR-703.step,models/dxf/DR-703.dxf,drawings/parts/DR-703.svg
+DR-704,Discharge hood - right plate,DR,MAKE,1,S235JR,Plate 2 mm,LASER,4.5,4.5,516.0,556.0,2.0,models/step/parts/DR-704.step,models/dxf/DR-704.dxf,drawings/parts/DR-704.svg
+DR-711,Discharge hood support arm,DR,MAKE,2,S235JR,Angle 40x40x4,SAW,0.95,1.9,400.0,40.0,40.0,models/step/parts/DR-711.step,,drawings/parts/DR-711.svg
+DR-712,Discharge hood post,DR,MAKE,2,S235JR,SHS 40x40x3,SAW,0.49,1.0,142.0,40.0,40.0,models/step/parts/DR-712.step,,drawings/parts/DR-712.svg
+DR-801,Cradle jack screw M20,DR,BUY,2,Purchased,M20 x 120 hex set screw 8.8 with 2 nuts (slope adjustment and lock),BUY,0.4,0.8,20.0,20.0,120.0,models/step/parts/DR-801.step,,drawings/parts/DR-801.svg
+DR-901,Control post,DR,MAKE,1,S235JR,SHS 40x40x3,SAW,1.39,1.4,400.0,40.0,40.0,models/step/parts/DR-901.step,,drawings/parts/DR-901.svg
+EL-001,Battery cabinet 40 kWh LiFePO4,EL,BUY,1,Purchased,"8 x 5.12 kWh 51.2 V LiFePO4 rack modules (40.96 kWh) in a 600 x 600 x 2000 cabinet with BMS, DC breaker 250 A, busbars; ventilated; non-combustible plinth",BUY,420,420,600.0,608.0,2000.0,models/step/parts/EL-001.step,,drawings/parts/EL-001.svg
+EL-002,Hybrid inverter 20 kW 3-phase,EL,BUY,1,Purchased,"20 kW 400 V three-phase hybrid inverter/charger, 2 MPPT (150-850 V), 48 V battery port, generator input with auto-start contact, IP65",BUY,48,48,520.0,240.0,680.0,models/step/parts/EL-002.step,,drawings/parts/EL-002.svg
+EL-003,Main distribution board,EL,BUY,1,Purchased,"Steel DB 600 x 800 x 250, IP54: 63 A 4-pole main switch, type 2 AC SPD, 30 mA RCDs, MCBs/motor breakers per machine, E-stop loop relay, energy meter",BUY,30,30,250.0,600.0,800.0,models/step/parts/EL-003.step,,drawings/parts/EL-003.svg
+EL-004,Backup diesel generator 20 kVA,EL,BUY,1,Purchased,"Silent canopy diesel generator 20 kVA / 16 kW, 400 V 50 Hz, 2-wire auto-start",BUY,650,650,1500.0,800.0,1300.0,models/step/parts/EL-004.step,,drawings/parts/EL-004.svg
+FG-001,Pallet 1200 x 1000,FG,BUY,1,Purchased,"Timber pallet 1200 x 1000 mm, 4-way entry, 1000 kg",BUY,22,22,1200.0,1000.0,144.0,models/step/parts/FG-001.step,,drawings/parts/FG-001.svg
+HP-101,Press base frame - leg,HP,MAKE,4,S235JR,SHS 100x100x5,SAW,8.31,33.2,557.0,100.0,100.0,models/step/parts/HP-101.step,,drawings/parts/HP-101.svg
+HP-102,Press base frame - long rail,HP,MAKE,2,S235JR,SHS 100x100x5,SAW,11.93,23.9,800.0,100.0,100.0,models/step/parts/HP-102.step,,drawings/parts/HP-102.svg
+HP-103,Press base frame - cross rail,HP,MAKE,2,S235JR,SHS 100x100x5,SAW,14.32,28.6,960.0,100.0,100.0,models/step/parts/HP-103.step,,drawings/parts/HP-103.svg
+HP-104,Press base frame - foot plate,HP,MAKE,4,S235JR,Plate 8 mm,LASER,1.4,5.6,120.0,190.0,8.0,models/step/parts/HP-104.step,models/dxf/HP-104.dxf,drawings/parts/HP-104.svg
+HP-105,Press base - return conveyor bearer,HP,MAKE,2,S235JR,SHS 60x60x4,SAW,6.75,13.5,960.0,60.0,60.0,models/step/parts/HP-105.step,,drawings/parts/HP-105.svg
+HP-201,Bed top plate,HP,MAKE,1,S355J2,Plate 30 mm,LASER,236.13,236.1,880.0,1160.0,30.0,models/step/parts/HP-201.step,models/dxf/HP-201.dxf,drawings/parts/HP-201.svg
+HP-202,Bed bottom plate,HP,MAKE,1,S355J2,Plate 20 mm,LASER,157.56,157.6,880.0,1160.0,20.0,models/step/parts/HP-202.step,models/dxf/HP-202.dxf,drawings/parts/HP-202.svg
+HP-203,Crosshead main web,HP,MAKE,9,S355J2,Plate 16 mm,LASER,34.97,314.7,1160.0,240.0,16.0,models/step/parts/HP-203.step,models/dxf/HP-203.dxf,drawings/parts/HP-203.svg
+HP-204,"Crosshead stiffener, outer bay",HP,MAKE,12,S355J2,Plate 12 mm,LASER,4.7,56.4,208.0,240.0,12.0,models/step/parts/HP-204.step,models/dxf/HP-204.dxf,drawings/parts/HP-204.svg
+HP-205,"Crosshead stiffener, inner bay",HP,MAKE,6,S355J2,Plate 12 mm,LASER,4.16,25.0,184.0,240.0,12.0,models/step/parts/HP-205.step,models/dxf/HP-205.dxf,drawings/parts/HP-205.svg
+HP-206,Column sleeve,HP,MAKE,8,S355J2,Hollow bar OD 121 x ID 71,TURN,13.56,108.5,240.0,121.0,121.0,models/step/parts/HP-206.step,,drawings/parts/HP-206.svg
+HP-301,Crown bottom plate,HP,MAKE,1,S355J2,Plate 30 mm,LASER,217.86,217.9,880.0,1160.0,30.0,models/step/parts/HP-301.step,models/dxf/HP-301.dxf,drawings/parts/HP-301.svg
+HP-302,Crown top plate,HP,MAKE,1,S355J2,Plate 20 mm,LASER,145.71,145.7,880.0,1160.0,20.0,models/step/parts/HP-302.step,models/dxf/HP-302.dxf,drawings/parts/HP-302.svg
+HP-303,Crown centre stiffener,HP,MAKE,2,S355J2,Plate 12 mm,LASER,8.68,17.4,384.0,240.0,12.0,models/step/parts/HP-303.step,models/dxf/HP-303.dxf,drawings/parts/HP-303.svg
+HP-304,Cylinder sleeve ring,HP,MAKE,1,S355J2,Plate 16 mm,ROLL,32.1,32.1,240.0,355.0,355.0,models/step/parts/HP-304.step,models/dxf/HP-304.dxf,drawings/parts/HP-304.svg
+HP-401,Press column dia 80,HP,MAKE,4,42CrMo4,"Round bar dia 80, hard-chromed",TURN,54.11,216.4,1510.0,80.0,80.0,models/step/parts/HP-401.step,,drawings/parts/HP-401.svg
+HP-402,Column nut M72x4,HP,MAKE,8,C45,Hexagon bar 105 A/F,TURN,2.49,19.9,121.2,105.0,58.0,models/step/parts/HP-402.step,,drawings/parts/HP-402.svg
+HP-501,Platen bottom plate,HP,MAKE,1,S355J2,Plate 30 mm,LASER,217.97,218.0,860.0,1140.0,30.0,models/step/parts/HP-501.step,models/dxf/HP-501.dxf,drawings/parts/HP-501.svg
+HP-502,Platen top plate,HP,MAKE,1,S355J2,Plate 20 mm,LASER,145.1,145.1,860.0,1140.0,20.0,models/step/parts/HP-502.step,models/dxf/HP-502.dxf,drawings/parts/HP-502.svg
+HP-503,Platen web,HP,MAKE,4,S355J2,Plate 16 mm,LASER,20.87,83.5,1108.0,150.0,16.0,models/step/parts/HP-503.step,models/dxf/HP-503.dxf,drawings/parts/HP-503.svg
+HP-504,Platen end web,HP,MAKE,2,S355J2,Plate 16 mm,LASER,16.2,32.4,860.0,150.0,16.0,models/step/parts/HP-504.step,models/dxf/HP-504.dxf,drawings/parts/HP-504.svg
+HP-505,Bush housing,HP,MAKE,4,S355J2,Hollow bar OD 130 x ID 95,TURN,8.51,34.0,200.0,130.0,130.0,models/step/parts/HP-505.step,,drawings/parts/HP-505.svg
+HP-506,Column guide bush,HP,MAKE,4,Bronze CuSn12,Cast bronze tube 105/75,TURN,4.88,19.5,200.0,100.0,100.0,models/step/parts/HP-506.step,,drawings/parts/HP-506.svg
+HP-601,Hydraulic cylinder 250/180 x 300,HP,BUY,1,Purchased,"Double-acting cylinder, bore 250, rod 180, stroke 300, 250 bar rated, head-flange mount (ISO 6022 MF1 style, 420 x 420 flange, 8 x M20 on PCD 380), rod-end male thread, cushioned",BUY,430,430,420.0,420.0,737.0,models/step/parts/HP-601.step,,drawings/parts/HP-601.svg
+HP-602,Rod flange,HP,MAKE,1,C45,Plate 40 mm,TURN,16.15,16.1,280.0,280.0,40.0,models/step/parts/HP-602.step,,drawings/parts/HP-602.svg
+HP-610,Hydraulic power unit 4 kW,HP,BUY,1,Purchased,"Power pack: 4 kW 400 V motor, hi-lo double pump (approx. 30 l/min at 40 bar, 5 l/min at 210 bar), 60 l tank, relief valve set 210 bar, 4/3 solenoid valve with pilot check (load holding), pressure switch, gauge 0-400 bar, return filter, oil cooler optional",BUY,95,95,500.0,330.0,580.0,models/step/parts/HP-610.step,,drawings/parts/HP-610.svg
+HP-620,Pressure gauge 0-400 bar,HP,BUY,1,Purchased,"Glycerine-filled gauge dia 100, 0-400 bar, with gauge isolator",BUY,0.6,0.6,100.0,40.0,100.0,models/step/parts/HP-620.step,,drawings/parts/HP-620.svg
+HP-630,Two-hand control console,HP,BUY,1,Purchased,"Two-hand control station type IIIC (ISO 13851) on pedestal, with E-stop, mode key switch and pressure/dwell timer display",BUY,14,14,420.0,160.0,1070.0,models/step/parts/HP-630.step,,drawings/parts/HP-630.svg
+HP-640,"Safety light curtain, 500 mm, type 4",HP,BUY,2,Purchased,"Type 4 safety light curtain pair (IEC 61496), 500 mm protective height, 30 mm resolution, with safety relay to stop the down-stroke (ISO 13855 safety distance to be calculated)",BUY,1.5,3.0,40.0,40.0,520.0,models/step/parts/HP-640.step,,drawings/parts/HP-640.svg
+HP-650,Rear fixed guard,HP,MAKE,1,S235JR,Weld mesh 25x25x2.5 in 25x25 angle frame,MESH,9.67,9.7,880.0,700.0,2.0,models/step/parts/HP-650.step,models/dxf/HP-650.dxf,drawings/parts/HP-650.svg
+HP-701,Lower bolster with lifter grooves,HP,MAKE,1,S355J2,Plate 30 mm,MILL,117.32,117.3,600.0,900.0,30.0,models/step/parts/HP-701.step,,drawings/parts/HP-701.svg
+HP-702,Spring die-lifter bar 40x24x600 with balls,HP,BUY,2,Purchased,"Spring-loaded ball die lifter for 42 mm groove, 600 long, lift 3 mm, approx. 100 kg per bar; retracts flush under press load",BUY,5,10,600.0,40.0,27.0,models/step/parts/HP-702.step,,drawings/parts/HP-702.svg
+HP-703,Carrier end stop (flip-down),HP,MAKE,1,S355J2,Flat bar 45x30,MILL,2.12,2.1,30.0,200.0,45.0,models/step/parts/HP-703.step,,drawings/parts/HP-703.svg
+HP-711,Upper bolster,HP,MAKE,1,S355J2,Plate 30 mm,MILL,106.03,106.0,540.0,840.0,30.0,models/step/parts/HP-711.step,,drawings/parts/HP-711.svg
+MX-101,Mixer frame - leg,MX,MAKE,4,S235JR,SHS 60x60x4,SAW,5.92,23.7,842.0,60.0,60.0,models/step/parts/MX-101.step,,drawings/parts/MX-101.svg
+MX-102,Mixer frame - long rail,MX,MAKE,4,S235JR,SHS 60x60x4,SAW,5.49,22.0,780.0,60.0,60.0,models/step/parts/MX-102.step,,drawings/parts/MX-102.svg
+MX-103,Mixer frame - cross rail,MX,MAKE,4,S235JR,SHS 60x60x4,SAW,5.49,22.0,780.0,60.0,60.0,models/step/parts/MX-103.step,,drawings/parts/MX-103.svg
+MX-104,Mixer frame - foot plate,MX,MAKE,4,S235JR,Plate 8 mm,LASER,0.73,2.9,80.0,150.0,8.0,models/step/parts/MX-104.step,models/dxf/MX-104.dxf,drawings/parts/MX-104.svg
+MX-201,Mixer deck plate,MX,MAKE,1,S235JR,Plate 8 mm,LASER,44.44,44.4,900.0,900.0,8.0,models/step/parts/MX-201.step,models/dxf/MX-201.dxf,drawings/parts/MX-201.svg
+MX-211,Drum base plate,MX,MAKE,1,S355J2,Plate 12 mm,LASER,15.79,15.8,462.0,462.0,12.0,models/step/parts/MX-211.step,models/dxf/MX-211.dxf,drawings/parts/MX-211.svg
+MX-212,Drum shell,MX,MAKE,1,S355J2,Sheet 6 mm,ROLL,21.12,21.1,320.0,462.0,462.0,models/step/parts/MX-212.step,models/dxf/MX-212.dxf,drawings/parts/MX-212.svg
+MX-213,Drum rim flange,MX,MAKE,1,S355J2,Plate 8 mm,LASER,7.18,7.2,600.0,600.0,8.0,models/step/parts/MX-213.step,models/dxf/MX-213.dxf,drawings/parts/MX-213.svg
+MX-214,Drum standoff,MX,MAKE,4,S235JR,SHS 40x40x3,SAW,0.29,1.2,82.0,40.0,40.0,models/step/parts/MX-214.step,,drawings/parts/MX-214.svg
+MX-215,Standoff pad,MX,MAKE,4,S235JR,Plate 8 mm,LASER,0.39,1.6,80.0,80.0,8.0,models/step/parts/MX-215.step,models/dxf/MX-215.dxf,drawings/parts/MX-215.svg
+MX-221,Discharge nozzle,MX,MAKE,1,S355J2,Plate 6 mm,WELD,1.67,1.7,80.0,152.0,82.0,models/step/parts/MX-221.step,,drawings/parts/MX-221.svg
+MX-222,Gate flange,MX,MAKE,1,S355J2,Plate 8 mm,LASER,1.65,1.6,240.0,150.0,8.0,models/step/parts/MX-222.step,models/dxf/MX-222.dxf,drawings/parts/MX-222.svg
+MX-223,Discharge gate blade,MX,MAKE,1,S355J2,Plate 6 mm,LASER,1.78,1.8,160.0,240.0,6.0,models/step/parts/MX-223.step,models/dxf/MX-223.dxf,drawings/parts/MX-223.svg
+MX-224,Gate guide spacer,MX,MAKE,2,S235JR,Flat bar 20x7,SAW,0.16,0.3,150.0,20.0,7.0,models/step/parts/MX-224.step,,drawings/parts/MX-224.svg
+MX-225,Gate keeper strip,MX,MAKE,2,S235JR,Flat bar 35x5,SAW,0.21,0.4,150.0,35.0,5.0,models/step/parts/MX-225.step,,drawings/parts/MX-225.svg
+MX-231,Discharge chute,MX,MAKE,1,AISI 304,Sheet 3 mm,BEND,2.19,2.2,330.0,186.0,50.0,models/step/parts/MX-231.step,models/dxf/MX-231.dxf,drawings/parts/MX-231.svg
+MX-241,Insulation cladding,MX,MAKE,1,AISI 304,Sheet 1 mm,ROLL,5.59,5.6,392.0,590.0,590.0,models/step/parts/MX-241.step,models/dxf/MX-241.dxf,drawings/parts/MX-241.svg
+MX-301,Bridge column,MX,MAKE,2,S235JR,SHS 80x80x4,SAW,7.46,14.9,782.0,80.0,80.0,models/step/parts/MX-301.step,,drawings/parts/MX-301.svg
+MX-302,Column base plate,MX,MAKE,2,S235JR,Plate 10 mm,LASER,1.96,3.9,160.0,160.0,10.0,models/step/parts/MX-302.step,models/dxf/MX-302.dxf,drawings/parts/MX-302.svg
+MX-303,Mixer bridge beam,MX,MAKE,1,S235JR,SHS 100x100x5,SAW,12.59,12.6,860.0,100.0,100.0,models/step/parts/MX-303.step,,drawings/parts/MX-303.svg
+MX-304,Gearbox mounting plate,MX,MAKE,1,S235JR,Plate 12 mm,LASER,2.08,2.1,180.0,180.0,12.0,models/step/parts/MX-304.step,models/dxf/MX-304.dxf,drawings/parts/MX-304.svg
+MX-311,Agitator shaft dia 40,MX,MAKE,1,C45,Round bar dia 40 h9 bright,TURN,9.32,9.3,957.0,40.0,40.0,models/step/parts/MX-311.step,,drawings/parts/MX-311.svg
+MX-312,Paddle bottom blade,MX,MAKE,1,Hardox 450,Plate 12 mm,LASER,2.46,2.5,436.0,60.0,12.0,models/step/parts/MX-312.step,models/dxf/MX-312.dxf,drawings/parts/MX-312.svg
+MX-313,Paddle side scraper,MX,MAKE,2,Hardox 450,Flat bar 40x10,SAW,0.78,1.6,250.0,40.0,10.0,models/step/parts/MX-313.step,,drawings/parts/MX-313.svg
+MX-314,Paddle hub,MX,MAKE,1,C45,Round bar dia 70,TURN,1.19,1.2,60.0,70.0,70.0,models/step/parts/MX-314.step,,drawings/parts/MX-314.svg
+MX-321,Rear lid with charge port,MX,MAKE,1,AISI 304,Sheet 3 mm,LASER,2.97,3.0,600.0,300.0,3.0,models/step/parts/MX-321.step,models/dxf/MX-321.dxf,drawings/parts/MX-321.svg
+MX-322,"Front lid (hinged, inspection)",MX,MAKE,1,AISI 304,Sheet 3 mm,LASER,3.3,3.3,600.0,300.0,3.0,models/step/parts/MX-322.step,models/dxf/MX-322.dxf,drawings/parts/MX-322.svg
+MX-323,Charge collar,MX,MAKE,1,AISI 304,Sheet 2 mm,BEND,0.48,0.5,134.0,114.0,62.0,models/step/parts/MX-323.step,models/dxf/MX-323.dxf,drawings/parts/MX-323.svg
+MX-401,Fume extraction hood - front/back panel,MX,MAKE,2,DC01 galv.,Sheet 1.5 mm,LASER,3.53,7.1,1000.0,480.2,1.5,models/step/parts/MX-401.step,models/dxf/MX-401.dxf,drawings/parts/MX-401.svg
+MX-402,Fume extraction hood - side panel,MX,MAKE,2,DC01 galv.,Sheet 1.5 mm,LASER,3.53,7.1,1000.0,480.2,1.5,models/step/parts/MX-402.step,models/dxf/MX-402.dxf,drawings/parts/MX-402.svg
+MX-411,Hood wall bracket,MX,MAKE,2,S235JR,Angle 50x50x5,SAW,3.69,7.4,990.0,50.0,50.0,models/step/parts/MX-411.step,,drawings/parts/MX-411.svg
+MX-412,Hood bracket wall plate,MX,MAKE,2,S235JR,Plate 8 mm,LASER,1.39,2.8,150.0,150.0,8.0,models/step/parts/MX-412.step,models/dxf/MX-412.dxf,drawings/parts/MX-412.svg
+MX-420,"Spiral duct dia 200, vertical",MX,BUY,1,Purchased,Galvanised spiral duct dia 200 with 250x250-to-dia-200 square/round adapter and one 90 deg bend,BUY,3,3,200.0,200.0,150.0,models/step/parts/MX-420.step,,drawings/parts/MX-420.svg
+MX-421,Inline extraction fan dia 200,MX,BUY,1,Purchased,"Inline duct fan dia 200, approx. 800 m3/h, metal casing, motor out of the air stream or rated 60 C, with weather cowl through the back wall",BUY,6,6,300.0,260.0,260.0,models/step/parts/MX-421.step,,drawings/parts/MX-421.svg
+MX-511,Guard frame upright,MX,MAKE,2,S235JR,SHS 25x25x2,SAW,1.01,2.0,700.0,25.0,25.0,models/step/parts/MX-511.step,,drawings/parts/MX-511.svg
+MX-512,Guard frame rail,MX,MAKE,2,S235JR,SHS 25x25x2,SAW,1.23,2.5,850.0,25.0,25.0,models/step/parts/MX-512.step,,drawings/parts/MX-512.svg
+MX-513,Guard mesh infill,MX,MAKE,1,S235JR,Weld mesh 25x25x2.5,MESH,8.67,8.7,850.0,650.0,2.0,models/step/parts/MX-513.step,models/dxf/MX-513.dxf,drawings/parts/MX-513.svg
+MX-601,"Band heater dia 462 x 70, 1.7 kW",MX,BUY,3,Purchased,"Mica or ceramic band heater, ID 462, width 70, 1.7 kW 230 V, two-piece clamp, max 350 C sheath",BUY,2.5,7.5,486.0,486.0,70.0,models/step/parts/MX-601.step,,drawings/parts/MX-601.svg
+MX-602,"Base plate heater dia 340, 3 kW",MX,BUY,1,Purchased,"Cast-in aluminium or mica disc heater OD 340, 3 kW 400 V, clamped under the drum base",BUY,6,6,340.0,340.0,20.0,models/step/parts/MX-602.step,,drawings/parts/MX-602.svg
+MX-701,Mixer heater control panel,MX,BUY,1,Purchased,"Wall/post-mounted panel 400x500x200 IP54: 2 x PID temperature controller (drum wall, melt), 4 x SSR 25 A with heat sinks, main contactor, agitator VFD 2.2 kW, lid interlock relay, E-stop, batch timer",BUY,18,18,400.0,208.0,500.0,models/step/parts/MX-701.step,,drawings/parts/MX-701.svg
+MX-702,Panel post,MX,MAKE,1,S235JR,SHS 40x40x3,SAW,5.23,5.2,1500.0,40.0,40.0,models/step/parts/MX-702.step,,drawings/parts/MX-702.svg
+MX-703,Panel post foot,MX,MAKE,1,S235JR,Plate 8 mm,LASER,0.47,0.5,130.0,60.0,8.0,models/step/parts/MX-703.step,models/dxf/MX-703.dxf,drawings/parts/MX-703.svg
+RC-101,Roller table frame - leg,RC,MAKE,8,S235JR,SHS 40x40x3,SAW,2.8,22.4,802.0,40.0,40.0,models/step/parts/RC-101.step,,drawings/parts/RC-101.svg
+RC-102,Roller table frame - long rail,RC,MAKE,8,S235JR,SHS 40x40x3,SAW,1.64,13.1,470.0,40.0,40.0,models/step/parts/RC-102.step,,drawings/parts/RC-102.svg
+RC-103,Roller table frame - cross rail,RC,MAKE,8,S235JR,SHS 40x40x3,SAW,3.21,25.7,920.0,40.0,40.0,models/step/parts/RC-103.step,,drawings/parts/RC-103.svg
+RC-104,Roller table frame - foot plate,RC,MAKE,8,S235JR,Plate 8 mm,LASER,0.47,3.8,60.0,130.0,8.0,models/step/parts/RC-104.step,models/dxf/RC-104.dxf,drawings/parts/RC-104.svg
+RC-111,Roller rail 550,RC,MAKE,8,S235JR,Angle 40x80x5,SAW,2.48,19.8,550.0,40.0,80.0,models/step/parts/RC-111.step,,drawings/parts/RC-111.svg
+RC-121,"Return rail, press section",RC,MAKE,2,S235JR,Flat bar 80x5,SAW,3.42,6.8,1090.0,80.0,5.0,models/step/parts/RC-121.step,,drawings/parts/RC-121.svg
+RC-201,Dough scale shelf - leg,RC,MAKE,4,S235JR,SHS 30x30x2.5,SAW,1.47,5.9,682.0,30.0,30.0,models/step/parts/RC-201.step,,drawings/parts/RC-201.svg
+RC-202,Dough scale shelf - long rail,RC,MAKE,4,S235JR,SHS 30x30x2.5,SAW,0.39,1.6,180.0,30.0,30.0,models/step/parts/RC-202.step,,drawings/parts/RC-202.svg
+RC-203,Dough scale shelf - cross rail,RC,MAKE,4,S235JR,SHS 30x30x2.5,SAW,0.78,3.1,360.0,30.0,30.0,models/step/parts/RC-203.step,,drawings/parts/RC-203.svg
+RC-204,Dough scale shelf - foot plate,RC,MAKE,4,S235JR,Plate 8 mm,LASER,0.36,1.4,50.0,120.0,8.0,models/step/parts/RC-204.step,models/dxf/RC-204.dxf,drawings/parts/RC-204.svg
+RC-251,Dough tray,RC,MAKE,1,AISI 304,Sheet 2 mm,BEND,2.57,2.6,240.0,380.0,60.0,models/step/parts/RC-251.step,models/dxf/RC-251.dxf,drawings/parts/RC-251.svg
+RC-255,Scale shelf top,RC,MAKE,1,S235JR,Plate 3 mm,LASER,2.37,2.4,240.0,420.0,3.0,models/step/parts/RC-255.step,models/dxf/RC-255.dxf,drawings/parts/RC-255.svg
+RC-301,Carrier hook tool,RC,BUY,1,Purchased,"Steel pull hook dia 12 x 700 with T-handle, for moving hot mould carriers and inserts",BUY,0.8,0.8,700.0,12.0,66.0,models/step/parts/RC-301.step,,drawings/parts/RC-301.svg
+SC-101,Rafter,SC,MAKE,4,S355J2,RHS 200x100x5,SAW,159.35,637.4,7000.0,100.0,200.0,models/step/parts/SC-101.step,,drawings/parts/SC-101.svg
+SC-102,Post base plate,SC,MAKE,8,S355J2,Plate 16 mm,LASER,15.2,121.6,350.0,350.0,16.0,models/step/parts/SC-102.step,models/dxf/SC-102.dxf,drawings/parts/SC-102.svg
+SC-103,Post cap plate,SC,MAKE,8,S355J2,Plate 12 mm,LASER,4.99,39.9,180.0,300.0,12.0,models/step/parts/SC-103.step,models/dxf/SC-103.dxf,drawings/parts/SC-103.svg
+SC-104,"Knee brace, rear",SC,MAKE,4,S235JR,SHS 60x60x3,SAW,5.34,21.4,995.0,60.0,60.0,models/step/parts/SC-104.step,,drawings/parts/SC-104.svg
+SC-105,"Knee brace, front",SC,MAKE,4,S235JR,SHS 60x60x3,SAW,4.39,17.6,818.0,60.0,60.0,models/step/parts/SC-105.step,,drawings/parts/SC-105.svg
+SC-111,Rear post,SC,MAKE,4,S355J2,SHS 150x150x5,SAW,73.42,293.7,3225.0,150.0,150.0,models/step/parts/SC-111.step,,drawings/parts/SC-111.svg
+SC-112,Front post,SC,MAKE,4,S355J2,SHS 150x150x5,SAW,95.5,382.0,4195.0,150.0,150.0,models/step/parts/SC-112.step,,drawings/parts/SC-112.svg
+SC-201,Purlin,SC,MAKE,21,S355J2,"RHS 120x60x3, hot-dip galvanised",SAW,37.62,790.0,4590.0,60.0,120.0,models/step/parts/SC-201.step,,drawings/parts/SC-201.svg
+SC-203,Purlin cleat,SC,MAKE,28,S355J2,Angle 100x75x8,SAW,1.26,35.3,120.0,100.0,75.0,models/step/parts/SC-203.step,,drawings/parts/SC-203.svg
+SC-301,"Bracing rod dia 16, rear",SC,MAKE,4,S355J2,Round bar dia 16,SAW,8.21,32.8,5201.0,16.0,16.0,models/step/parts/SC-301.step,,drawings/parts/SC-301.svg
+SC-302,"Bracing rod dia 16, front",SC,MAKE,2,S355J2,Round bar dia 16,SAW,9.11,18.2,5771.0,16.0,16.0,models/step/parts/SC-302.step,,drawings/parts/SC-302.svg
+SC-401,PV module 550 W,SC,BUY,36,Purchased,"Monocrystalline 550 Wp module, 144 half-cells, approx. 2278 x 1134 x 35 mm, 28 kg, Vmp ~41.7 V, Imp ~13.2 A",BUY,28,1008,2278.0,1134.0,35.0,models/step/parts/SC-401.step,,drawings/parts/SC-401.svg
+SC-501,PV combiner box,SC,BUY,1,Purchased,"DC combiner: 3 strings of 12 modules (approx. 500 V, 13 A each), string fuses 20 A gPV, type 2 DC surge arrester, 1000 V DC isolator",BUY,8,8,400.0,200.0,500.0,models/step/parts/SC-501.step,,drawings/parts/SC-501.svg
+SF-101,Sand hopper stand - leg,SF,MAKE,4,S235JR,SHS 80x80x4,SAW,12.71,50.8,1332.0,80.0,80.0,models/step/parts/SF-101.step,,drawings/parts/SF-101.svg
+SF-102,Sand hopper stand - long rail,SF,MAKE,6,S235JR,SHS 80x80x4,SAW,10.69,64.1,1120.0,80.0,80.0,models/step/parts/SF-102.step,,drawings/parts/SF-102.svg
+SF-103,Sand hopper stand - cross rail,SF,MAKE,5,S235JR,SHS 80x80x4,SAW,10.69,53.4,1120.0,80.0,80.0,models/step/parts/SF-103.step,,drawings/parts/SF-103.svg
+SF-104,Sand hopper stand - foot plate,SF,MAKE,4,S235JR,Plate 8 mm,LASER,1.04,4.2,100.0,170.0,8.0,models/step/parts/SF-104.step,models/dxf/SF-104.dxf,drawings/parts/SF-104.svg
+SF-201,Sand receiving hopper - front/back panel,SF,MAKE,2,S235JR,Sheet 4 mm,LASER,17.36,34.7,1100.0,818.9,4.0,models/step/parts/SF-201.step,models/dxf/SF-201.dxf,drawings/parts/SF-201.svg
+SF-202,Sand receiving hopper - side panel,SF,MAKE,2,S235JR,Sheet 4 mm,LASER,17.36,34.7,1100.0,818.9,4.0,models/step/parts/SF-202.step,models/dxf/SF-202.dxf,drawings/parts/SF-202.svg
+SF-203,Hopper top band,SF,MAKE,4,S235JR,Plate 4 mm,LASER,5.2,20.8,1104.0,150.0,4.0,models/step/parts/SF-203.step,models/dxf/SF-203.dxf,drawings/parts/SF-203.svg
+SF-204,Hopper support rim angle,SF,MAKE,4,S235JR,Angle 50x50x5,SAW,4.32,17.3,1158.0,50.0,50.0,models/step/parts/SF-204.step,,drawings/parts/SF-204.svg
+SF-205,Grizzly bar,SF,MAKE,11,S235JR,Round bar dia 12,SAW,0.98,10.8,1100.0,12.0,12.0,models/step/parts/SF-205.step,,drawings/parts/SF-205.svg
+SF-206,Grizzly end flat,SF,MAKE,2,S235JR,Flat bar 30x5,SAW,1.3,2.6,1100.0,30.0,5.0,models/step/parts/SF-206.step,,drawings/parts/SF-206.svg
+SF-251,Flood-feed boot,SF,MAKE,1,S235JR,Plate 4 mm,WELD,12.49,12.5,258.0,258.0,360.0,models/step/parts/SF-251.step,,drawings/parts/SF-251.svg
+SF-301,Elevating screw (45 deg) - casing tube,SF,MAKE,1,S235JR,Tube OD114.3 x 3.6,SAW,33.57,33.6,3484.0,114.3,114.3,models/step/parts/SF-301.step,,drawings/parts/SF-301.svg
+SF-302,Elevating screw (45 deg) - end flange,SF,MAKE,2,S235JR,Plate 8 mm,LASER,1.3,2.6,170.0,170.0,8.0,models/step/parts/SF-302.step,models/dxf/SF-302.dxf,drawings/parts/SF-302.svg
+SF-303,Elevating screw (45 deg) - screw centre pipe,SF,MAKE,1,S235JR,Tube OD33.7 x 4,SAW,10.15,10.2,3464.0,33.7,33.7,models/step/parts/SF-303.step,,drawings/parts/SF-303.svg
+SF-304,Elevating screw (45 deg) - tail stub shaft,SF,MAKE,1,C45,Round bar dia 30,TURN,0.53,0.5,135.0,25.7,25.7,models/step/parts/SF-304.step,,drawings/parts/SF-304.svg
+SF-305,Elevating screw (45 deg) - drive stub shaft,SF,MAKE,1,C45,Round bar dia 30,TURN,0.95,0.9,250.0,25.7,25.7,models/step/parts/SF-305.step,,drawings/parts/SF-305.svg
+SF-307,Elevating screw (45 deg) - outlet spout,SF,MAKE,1,S235JR,Sheet 3 mm,BEND,1.1,1.1,110.0,90.0,120.0,models/step/parts/SF-307.step,models/dxf/SF-307.dxf,drawings/parts/SF-307.svg
+SF-401,Overhead transfer screw - casing tube,SF,MAKE,1,S235JR,Tube OD114.3 x 3.6,SAW,29.41,29.4,3060.0,114.3,114.3,models/step/parts/SF-401.step,,drawings/parts/SF-401.svg
+SF-402,Overhead transfer screw - end flange,SF,MAKE,2,S235JR,Plate 8 mm,LASER,1.3,2.6,170.0,170.0,8.0,models/step/parts/SF-402.step,models/dxf/SF-402.dxf,drawings/parts/SF-402.svg
+SF-403,Overhead transfer screw - screw centre pipe,SF,MAKE,1,S235JR,Tube OD33.7 x 4,SAW,8.91,8.9,3040.0,33.7,33.7,models/step/parts/SF-403.step,,drawings/parts/SF-403.svg
+SF-404,Overhead transfer screw - tail stub shaft,SF,MAKE,1,C45,Round bar dia 30,TURN,0.53,0.5,135.0,25.7,25.7,models/step/parts/SF-404.step,,drawings/parts/SF-404.svg
+SF-405,Overhead transfer screw - drive stub shaft,SF,MAKE,1,C45,Round bar dia 30,TURN,0.95,0.9,250.0,25.7,25.7,models/step/parts/SF-405.step,,drawings/parts/SF-405.svg
+SF-406,Overhead transfer screw - inlet stub,SF,MAKE,1,S235JR,Sheet 3 mm,BEND,1.03,1.0,150.0,100.0,90.0,models/step/parts/SF-406.step,models/dxf/SF-406.dxf,drawings/parts/SF-406.svg
+SF-407,Overhead transfer screw - outlet spout,SF,MAKE,1,S235JR,Sheet 3 mm,BEND,3.65,3.6,110.0,90.0,400.0,models/step/parts/SF-407.step,models/dxf/SF-407.dxf,drawings/parts/SF-407.svg
+SF-501,Elevating screw support post,SF,MAKE,1,S235JR,SHS 80x80x4,SAW,19.59,19.6,2052.0,80.0,80.0,models/step/parts/SF-501.step,,drawings/parts/SF-501.svg
+SF-502,Post base plate,SF,MAKE,2,S235JR,Plate 10 mm,LASER,4.83,9.7,250.0,250.0,10.0,models/step/parts/SF-502.step,models/dxf/SF-502.dxf,drawings/parts/SF-502.svg
+SF-503,Post saddle plate,SF,MAKE,2,S235JR,Plate 10 mm,LASER,1.99,4.0,160.0,160.0,10.0,models/step/parts/SF-503.step,models/dxf/SF-503.dxf,drawings/parts/SF-503.svg
+SF-511,Transfer screw support post,SF,MAKE,1,S235JR,SHS 80x80x4,SAW,21.41,21.4,2243.0,80.0,80.0,models/step/parts/SF-511.step,,drawings/parts/SF-511.svg
+SH-101,Shredder frame - leg,SH,MAKE,4,S235JR,SHS 60x60x4,SAW,5.57,22.3,792.0,60.0,60.0,models/step/parts/SH-101.step,,drawings/parts/SH-101.svg
+SH-102,Shredder frame - long rail,SH,MAKE,3,S235JR,SHS 60x60x4,SAW,4.78,14.3,680.0,60.0,60.0,models/step/parts/SH-102.step,,drawings/parts/SH-102.svg
+SH-103,Shredder frame - cross rail,SH,MAKE,4,S235JR,SHS 60x60x4,SAW,5.84,23.4,830.0,60.0,60.0,models/step/parts/SH-103.step,,drawings/parts/SH-103.svg
+SH-104,Shredder frame - foot plate,SH,MAKE,4,S235JR,Plate 8 mm,LASER,0.73,2.9,80.0,150.0,8.0,models/step/parts/SH-104.step,models/dxf/SH-104.dxf,drawings/parts/SH-104.svg
+SH-201,Shredder deck plate,SH,MAKE,1,S235JR,Plate 10 mm,LASER,50.13,50.1,800.0,950.0,10.0,models/step/parts/SH-201.step,models/dxf/SH-201.dxf,drawings/parts/SH-201.svg
+SH-211,Chamber end plate (bearing plate),SH,MAKE,2,S355J2,Plate 15 mm,LASER,6.88,13.8,244.0,250.0,15.0,models/step/parts/SH-211.step,models/dxf/SH-211.dxf,drawings/parts/SH-211.svg
+SH-212,Chamber side plate,SH,MAKE,2,S355J2,Plate 12 mm,LASER,7.11,14.2,302.0,250.0,12.0,models/step/parts/SH-212.step,models/dxf/SH-212.dxf,drawings/parts/SH-212.svg
+SH-213,Chamber flange (top / bottom),SH,MAKE,2,S235JR,Plate 10 mm,LASER,6.31,12.6,344.0,432.0,10.0,models/step/parts/SH-213.step,models/dxf/SH-213.dxf,drawings/parts/SH-213.svg
+SH-221,Rotor shaft (hex 36 A/F),SH,MAKE,1,C45,Hexagon bar 36 A/F,TURN,5.16,5.2,642.0,41.6,36.0,models/step/parts/SH-221.step,,drawings/parts/SH-221.svg
+SH-231,"Rotary knife, type A (hex at 0 deg)",SH,MAKE,5,Hardox 450,Plate 10 mm,LASER,1.34,6.7,167.9,162.1,10.0,models/step/parts/SH-231.step,models/dxf/SH-231.dxf,drawings/parts/SH-231.svg
+SH-232,"Rotary knife, type B (hex at 20 deg)",SH,MAKE,5,Hardox 450,Plate 10 mm,LASER,1.34,6.7,167.9,162.1,10.0,models/step/parts/SH-232.step,models/dxf/SH-232.dxf,drawings/parts/SH-232.svg
+SH-233,"Rotary knife, type C (hex at 40 deg)",SH,MAKE,5,Hardox 450,Plate 10 mm,LASER,1.34,6.7,167.9,162.1,10.0,models/step/parts/SH-233.step,models/dxf/SH-233.dxf,drawings/parts/SH-233.svg
+SH-234,Rotor spacer,SH,MAKE,15,S355J2,Plate 10 mm,LASER,0.16,2.4,64.0,64.0,10.0,models/step/parts/SH-234.step,models/dxf/SH-234.dxf,drawings/parts/SH-234.svg
+SH-241,Fixed comb (counter knife),SH,MAKE,2,Hardox 450,Plate 10 mm,LASER,0.93,1.9,76.0,300.0,10.0,models/step/parts/SH-241.step,models/dxf/SH-241.dxf,drawings/parts/SH-241.svg
+SH-242,Comb support angle,SH,MAKE,2,S235JR,Angle 40x40x5,SAW,0.89,1.8,302.0,40.0,40.0,models/step/parts/SH-242.step,,drawings/parts/SH-242.svg
+SH-251,"Screen, dia 8 perforation",SH,MAKE,1,S355J2,Sheet 4 mm,ROLL,2.68,2.7,300.0,201.8,87.0,models/step/parts/SH-251.step,models/dxf/SH-251.dxf,drawings/parts/SH-251.svg
+SH-2601,Shredder feed hopper - front/back panel,SH,MAKE,2,S235JR,Sheet 3 mm,LASER,4.62,9.2,700.0,426.9,3.0,models/step/parts/SH-2601.step,models/dxf/SH-2601.dxf,drawings/parts/SH-2601.svg
+SH-2602,Shredder feed hopper - side panel,SH,MAKE,2,S235JR,Sheet 3 mm,LASER,4.95,9.9,600.0,466.5,3.0,models/step/parts/SH-2602.step,models/dxf/SH-2602.dxf,drawings/parts/SH-2602.svg
+SH-263,Hopper flange,SH,MAKE,1,S235JR,Plate 6 mm,LASER,3.83,3.8,344.0,432.0,6.0,models/step/parts/SH-263.step,models/dxf/SH-263.dxf,drawings/parts/SH-263.svg
+SH-271,Discharge skirt,SH,MAKE,1,DC01 galv.,Sheet 2 mm,BEND,4.99,5.0,226.0,308.0,300.0,models/step/parts/SH-271.step,models/dxf/SH-271.dxf,drawings/parts/SH-271.svg
+SH-281,Gearmotor torque arm,SH,MAKE,1,S235JR,Plate 10 mm,LASER,1.1,1.1,80.0,180.0,10.0,models/step/parts/SH-281.step,models/dxf/SH-281.dxf,drawings/parts/SH-281.svg
+SH-291,Control post,SH,MAKE,1,S235JR,SHS 40x40x3,SAW,1.74,1.7,500.0,40.0,40.0,models/step/parts/SH-291.step,,drawings/parts/SH-291.svg
+ST-101,Sorting table frame - leg,ST,MAKE,4,S235JR,SHS 40x40x2.5,SAW,2.42,9.7,822.0,40.0,40.0,models/step/parts/ST-101.step,,drawings/parts/ST-101.svg
+ST-102,Sorting table frame - long rail,ST,MAKE,3,S235JR,SHS 40x40x2.5,SAW,2.41,7.2,820.0,40.0,40.0,models/step/parts/ST-102.step,,drawings/parts/ST-102.svg
+ST-103,Sorting table frame - cross rail,ST,MAKE,4,S235JR,SHS 40x40x2.5,SAW,1.53,6.1,520.0,40.0,40.0,models/step/parts/ST-103.step,,drawings/parts/ST-103.svg
+ST-104,Sorting table frame - foot plate,ST,MAKE,4,S235JR,Plate 8 mm,LASER,0.47,1.9,60.0,130.0,8.0,models/step/parts/ST-104.step,models/dxf/ST-104.dxf,drawings/parts/ST-104.svg
+ST-201,Sorting table top,ST,MAKE,1,HDPE,HDPE board 20 mm,BOARD,11.43,11.4,940.0,640.0,20.0,models/step/parts/ST-201.step,models/dxf/ST-201.dxf,drawings/parts/ST-201.svg
+ST-301,"Reject bin 80 L, red",ST,BUY,1,Purchased,"80 L rigid PP bin, RED, labelled ""PVC / PET / unknown - REJECT""",BUY,3.5,3.5,400.0,400.0,600.0,models/step/parts/ST-301.step,,drawings/parts/ST-301.svg
+ST-302,"HDPE bin 80 L, green",ST,BUY,1,Purchased,"80 L rigid PP bin, GREEN, labelled ""HDPE only""",BUY,3.5,3.5,400.0,400.0,600.0,models/step/parts/ST-302.step,,drawings/parts/ST-302.svg
+TL-001,"Roof tile, double-roman, plastic-sand",TL,MAKE,37,Plastic-sand composite,70 % dry sand + 30 % HDPE by weight,MOULD,2.19,81.0,330.0,420.0,52.0,models/step/parts/TL-001.step,,drawings/parts/TL-001.svg
+TL-101,Cavity insert (lower mould half),TL,MAKE,10,Al A356-T6,"Sand casting, or 5083 tooling plate 80 mm",CAST,18.73,187.3,470.0,380.0,75.0,models/step/parts/TL-101.step,,drawings/parts/TL-101.svg
+TL-102,Punch (upper mould half),TL,MAKE,2,S355J2,Plate 100 mm,CNC3D,84.86,169.7,470.0,380.0,90.0,models/step/parts/TL-102.step,,drawings/parts/TL-102.svg
+TL-111,Carrier base plate,TL,MAKE,2,S355J2,Plate 10 mm,LASER,35.55,71.1,540.0,840.0,10.0,models/step/parts/TL-111.step,models/dxf/TL-111.dxf,drawings/parts/TL-111.svg
+TL-112,Carrier long rim bar,TL,MAKE,4,S235JR,Flat bar 20x15,SAW,1.94,7.8,822.0,20.0,15.0,models/step/parts/TL-112.step,,drawings/parts/TL-112.svg
+TL-113,Carrier cross rim bar,TL,MAKE,6,S235JR,Flat bar 20x15,SAW,1.11,6.7,471.0,20.0,15.0,models/step/parts/TL-113.step,,drawings/parts/TL-113.svg
+TR-101,Trim table frame - leg,TR,MAKE,4,S235JR,SHS 40x40x2.5,SAW,2.47,9.9,838.0,40.0,40.0,models/step/parts/TR-101.step,,drawings/parts/TR-101.svg
+TR-102,Trim table frame - long rail,TR,MAKE,3,S235JR,SHS 40x40x2.5,SAW,2.27,6.8,770.0,40.0,40.0,models/step/parts/TR-102.step,,drawings/parts/TR-102.svg
+TR-103,Trim table frame - cross rail,TR,MAKE,4,S235JR,SHS 40x40x2.5,SAW,1.83,7.3,620.0,40.0,40.0,models/step/parts/TR-103.step,,drawings/parts/TR-103.svg
+TR-104,Trim table frame - foot plate,TR,MAKE,4,S235JR,Plate 8 mm,LASER,0.47,1.9,60.0,130.0,8.0,models/step/parts/TR-104.step,models/dxf/TR-104.dxf,drawings/parts/TR-104.svg
+TR-201,Trim table top,TR,MAKE,1,S235JR,Plate 4 mm,LASER,19.81,19.8,890.0,740.0,4.0,models/step/parts/TR-201.step,models/dxf/TR-201.dxf,drawings/parts/TR-201.svg
+TR-2101,Offcut funnel - front/back panel,TR,MAKE,2,DC01 galv.,Sheet 1.5 mm,LASER,0.41,0.8,260.0,181.1,1.5,models/step/parts/TR-2101.step,models/dxf/TR-2101.dxf,drawings/parts/TR-2101.svg
+TR-2102,Offcut funnel - side panel,TR,MAKE,2,DC01 galv.,Sheet 1.5 mm,LASER,0.32,0.6,160.0,193.1,1.5,models/step/parts/TR-2102.step,models/dxf/TR-2102.dxf,drawings/parts/TR-2102.svg
+TR-301,Trim spindle 0.75 kW with carbide burr,TR,BUY,1,Purchased,"Router / die-grinder spindle 0.75 kW, 10 000-20 000 rpm variable, under-table mount, with dia 12 x 30 cylindrical carbide burr and guide bearing; foot switch",BUY,4,4,80.0,80.0,295.0,models/step/parts/TR-301.step,,drawings/parts/TR-301.svg
+TR-311,Guard post,TR,MAKE,4,S235JR,SHS 25x25x2,SAW,0.55,2.2,380.0,25.0,25.0,models/step/parts/TR-311.step,,drawings/parts/TR-311.svg
+TR-312,"Guard top rail, long",TR,MAKE,2,S235JR,SHS 25x25x2,SAW,0.79,1.6,550.0,25.0,25.0,models/step/parts/TR-312.step,,drawings/parts/TR-312.svg
+TR-313,"Guard top rail, short",TR,MAKE,2,S235JR,SHS 25x25x2,SAW,0.58,1.2,400.0,25.0,25.0,models/step/parts/TR-313.step,,drawings/parts/TR-313.svg
+TR-321,"Guard panel, top",TR,MAKE,1,Polycarbonate,Polycarbonate sheet 4 mm,BOARD,1.3,1.3,600.0,450.0,4.0,models/step/parts/TR-321.step,models/dxf/TR-321.dxf,drawings/parts/TR-321.svg
+TR-322,"Guard panel, back",TR,MAKE,1,Polycarbonate,Polycarbonate sheet 4 mm,BOARD,1.09,1.1,600.0,380.0,4.0,models/step/parts/TR-322.step,models/dxf/TR-322.dxf,drawings/parts/TR-322.svg
+TR-323,"Guard panel, side",TR,MAKE,2,Polycarbonate,Polycarbonate sheet 4 mm,BOARD,0.82,1.6,450.0,380.0,4.0,models/step/parts/TR-323.step,models/dxf/TR-323.dxf,drawings/parts/TR-323.svg
+TR-324,"Guard panel, front upper",TR,MAKE,1,Polycarbonate,Polycarbonate sheet 4 mm,BOARD,0.58,0.6,600.0,200.0,4.0,models/step/parts/TR-324.step,models/dxf/TR-324.dxf,drawings/parts/TR-324.svg
+TR-401,Trim fence,TR,MAKE,1,HDPE,HDPE board 20 mm,BOARD,0.23,0.2,300.0,40.0,20.0,models/step/parts/TR-401.step,models/dxf/TR-401.dxf,drawings/parts/TR-401.svg
+TR-901,Control post,TR,MAKE,1,S235JR,SHS 30x30x2,SAW,0.53,0.5,300.0,30.0,30.0,models/step/parts/TR-901.step,,drawings/parts/TR-901.svg
+TT-101,Base runner,TT,MAKE,2,S235JR,RHS 100x50x4,SAW,7.13,14.3,800.0,50.0,100.0,models/step/parts/TT-101.step,,drawings/parts/TT-101.svg
+TT-102,Base plate,TT,MAKE,1,S235JR,Plate 10 mm,LASER,31.4,31.4,800.0,500.0,10.0,models/step/parts/TT-102.step,models/dxf/TT-102.dxf,drawings/parts/TT-102.svg
+TT-103,Upright,TT,MAKE,2,S235JR,SHS 80x80x4,SAW,11.93,23.9,1250.0,80.0,80.0,models/step/parts/TT-103.step,,drawings/parts/TT-103.svg
+TT-104,Top beam,TT,MAKE,1,S235JR,SHS 80x80x4,SAW,6.47,6.5,680.0,80.0,80.0,models/step/parts/TT-104.step,,drawings/parts/TT-104.svg
+TT-105,Support beam,TT,MAKE,1,S235JR,RHS 150x100x5,SAW,7.54,7.5,400.0,100.0,150.0,models/step/parts/TT-105.step,,drawings/parts/TT-105.svg
+TT-106,Support saddle,TT,MAKE,4,S235JR,Flat bar 40x20,MILL,0.34,1.4,40.0,60.0,20.0,models/step/parts/TT-106.step,,drawings/parts/TT-106.svg
+TT-201,Support / loading bar dia 30,TT,MAKE,3,C45,Round bar dia 30,SAW,2.0,6.0,360.0,30.0,30.0,models/step/parts/TT-201.step,,drawings/parts/TT-201.svg
+TT-202,Loading nose holder,TT,MAKE,1,S235JR,Flat bar 60x40,MILL,0.96,1.0,60.0,60.0,40.0,models/step/parts/TT-202.step,,drawings/parts/TT-202.svg
+TT-301,Hydraulic ram 5 t with hand pump and gauge,TT,BUY,1,Purchased,"Single-acting 5 t ram, stroke >= 100 mm, with hand pump, hose and calibrated gauge (or a 20 kN load cell + indicator for direct reading)",BUY,9,9,70.0,70.0,960.0,models/step/parts/TT-301.step,,drawings/parts/TT-301.svg
+VS-101,Screen frame - leg,VS,MAKE,4,S235JR,SHS 50x50x3,SAW,3.06,12.2,692.0,50.0,50.0,models/step/parts/VS-101.step,,drawings/parts/VS-101.svg
+VS-102,Screen frame - long rail,VS,MAKE,3,S235JR,SHS 50x50x3,SAW,2.21,6.6,500.0,50.0,50.0,models/step/parts/VS-102.step,,drawings/parts/VS-102.svg
+VS-103,Screen frame - cross rail,VS,MAKE,4,S235JR,SHS 50x50x3,SAW,3.98,15.9,900.0,50.0,50.0,models/step/parts/VS-103.step,,drawings/parts/VS-103.svg
+VS-104,Screen frame - foot plate,VS,MAKE,4,S235JR,Plate 8 mm,LASER,0.6,2.4,70.0,140.0,8.0,models/step/parts/VS-104.step,models/dxf/VS-104.dxf,drawings/parts/VS-104.svg
+VS-201,Spring seat,VS,MAKE,4,S235JR,Plate 6 mm,LASER,0.3,1.2,80.0,80.0,6.0,models/step/parts/VS-201.step,models/dxf/VS-201.dxf,drawings/parts/VS-201.svg
+VS-202,Compression spring dia 50 x 90,VS,BUY,4,Purchased,"Compression spring OD 50, wire 6, free length 90, rate approx. 15 N/mm, ground ends",BUY,0.3,1.2,50.0,50.0,90.0,models/step/parts/VS-202.step,,drawings/parts/VS-202.svg
+VS-301,Screen box side plate,VS,MAKE,2,S235JR,Plate 4 mm,LASER,3.96,7.9,840.0,150.0,4.0,models/step/parts/VS-301.step,models/dxf/VS-301.dxf,drawings/parts/VS-301.svg
+VS-302,Screen box back plate,VS,MAKE,1,S235JR,Plate 4 mm,LASER,2.03,2.0,432.0,150.0,4.0,models/step/parts/VS-302.step,models/dxf/VS-302.dxf,drawings/parts/VS-302.svg
+VS-303,Screen box cross tube,VS,MAKE,2,S235JR,Tube OD33.7 x 3,SAW,0.98,2.0,432.0,33.7,33.7,models/step/parts/VS-303.step,,drawings/parts/VS-303.svg
+VS-304,Deck support flat,VS,MAKE,2,S235JR,Flat bar 25x5,SAW,0.82,1.6,836.0,25.0,5.0,models/step/parts/VS-304.step,,drawings/parts/VS-304.svg
+VS-305,Screen mesh panel 2 mm aperture,VS,MAKE,1,Woven wire 304,"Woven wire cloth, 2.0 mm aperture, 0.9 mm wire",MESH,5.68,5.7,430.0,836.0,2.0,models/step/parts/VS-305.step,models/dxf/VS-305.dxf,drawings/parts/VS-305.svg
+VS-306,Mesh clamp strip,VS,MAKE,2,S235JR,Flat bar 25x4,SAW,0.66,1.3,836.0,25.0,4.0,models/step/parts/VS-306.step,,drawings/parts/VS-306.svg
+VS-307,Vibrator bridge plate,VS,MAKE,1,S235JR,Plate 8 mm,LASER,5.5,5.5,440.0,200.0,8.0,models/step/parts/VS-307.step,models/dxf/VS-307.dxf,drawings/parts/VS-307.svg
+VS-308,Vibrator motor 0.12 kW,VS,BUY,1,Purchased,"External electric vibrator motor 0.12 kW, 2-pole (3000 rpm), centrifugal force adjustable to approx. 1.5 kN",BUY,6,6,200.0,150.0,130.0,models/step/parts/VS-308.step,,drawings/parts/VS-308.svg
+VS-309,Spring lug,VS,MAKE,4,S235JR,Angle 60x60x6,SAW,0.43,1.7,80.0,60.0,60.0,models/step/parts/VS-309.step,,drawings/parts/VS-309.svg
+VS-3101,Undersize pan - front/back panel,VS,MAKE,2,DC01 galv.,Sheet 2 mm,LASER,1.72,3.4,430.0,378.5,2.0,models/step/parts/VS-3101.step,models/dxf/VS-3101.dxf,drawings/parts/VS-3101.svg
+VS-3102,Undersize pan - side panel,VS,MAKE,2,DC01 galv.,Sheet 2 mm,LASER,1.97,3.9,700.0,295.3,2.0,models/step/parts/VS-3102.step,models/dxf/VS-3102.dxf,drawings/parts/VS-3102.svg
+VS-321,Oversize chute,VS,MAKE,1,DC01 galv.,Sheet 2 mm,BEND,1.17,1.2,434.0,135.0,60.0,models/step/parts/VS-321.step,models/dxf/VS-321.dxf,drawings/parts/VS-321.svg
+VS-401,Screen dust hood - front/back panel,VS,MAKE,2,DC01 galv.,Sheet 1.5 mm,LASER,0.88,1.8,440.0,253.0,1.5,models/step/parts/VS-401.step,models/dxf/VS-401.dxf,drawings/parts/VS-401.svg
+VS-402,Screen dust hood - side panel,VS,MAKE,2,DC01 galv.,Sheet 1.5 mm,LASER,0.85,1.7,400.0,263.5,1.5,models/step/parts/VS-402.step,models/dxf/VS-402.dxf,drawings/parts/VS-402.svg
+VS-411,Dust hood post,VS,MAKE,4,S235JR,SHS 30x30x2,SAW,0.56,2.2,320.0,30.0,30.0,models/step/parts/VS-411.step,,drawings/parts/VS-411.svg
+VS-412,Dust hood bearer,VS,MAKE,2,S235JR,Angle 30x30x3,SAW,0.81,1.6,600.0,30.0,30.0,models/step/parts/VS-412.step,,drawings/parts/VS-412.svg
+VS-501,Stones bucket 20 L,VS,BUY,1,Purchased,Steel bucket 20 L for stones and oversize,BUY,1.5,1.5,300.0,300.0,300.0,models/step/parts/VS-501.step,,drawings/parts/VS-501.svg
+WB-101,Weigh batcher frame - leg,WB,MAKE,4,S235JR,SHS 50x50x3,SAW,6.61,26.4,1492.0,50.0,50.0,models/step/parts/WB-101.step,,drawings/parts/WB-101.svg
+WB-102,Weigh batcher frame - long rail,WB,MAKE,5,S235JR,SHS 50x50x3,SAW,3.98,19.9,900.0,50.0,50.0,models/step/parts/WB-102.step,,drawings/parts/WB-102.svg
+WB-103,Weigh batcher frame - cross rail,WB,MAKE,5,S235JR,SHS 50x50x3,SAW,2.21,11.1,500.0,50.0,50.0,models/step/parts/WB-103.step,,drawings/parts/WB-103.svg
+WB-104,Weigh batcher frame - foot plate,WB,MAKE,4,S235JR,Plate 8 mm,LASER,0.6,2.4,70.0,140.0,8.0,models/step/parts/WB-104.step,models/dxf/WB-104.dxf,drawings/parts/WB-104.svg
+WB-201,Collecting hopper - front/back panel,WB,MAKE,2,DC01 galv.,Sheet 2 mm,LASER,3.32,6.6,900.0,403.1,2.0,models/step/parts/WB-201.step,models/dxf/WB-201.dxf,drawings/parts/WB-201.svg
+WB-202,Collecting hopper - side panel,WB,MAKE,2,DC01 galv.,Sheet 2 mm,LASER,2.42,4.8,500.0,513.0,2.0,models/step/parts/WB-202.step,models/dxf/WB-202.dxf,drawings/parts/WB-202.svg
+WB-251,Screw inlet chute,WB,MAKE,1,S235JR,Sheet 3 mm,WELD,1.9,1.9,156.0,106.0,210.0,models/step/parts/WB-251.step,,drawings/parts/WB-251.svg
+WB-301,Weigh hopper - front/back panel,WB,MAKE,4,AISI 304,Sheet 2 mm,LASER,1.19,4.8,380.0,313.0,2.0,models/step/parts/WB-301.step,models/dxf/WB-301.dxf,drawings/parts/WB-301.svg
+WB-302,Weigh hopper - side panel,WB,MAKE,4,AISI 304,Sheet 2 mm,LASER,1.19,4.8,380.0,313.0,2.0,models/step/parts/WB-302.step,models/dxf/WB-302.dxf,drawings/parts/WB-302.svg
+WB-303,Weigh hopper band,WB,MAKE,8,AISI 304,Plate 2 mm,LASER,0.72,5.8,382.0,120.0,2.0,models/step/parts/WB-303.step,models/dxf/WB-303.dxf,drawings/parts/WB-303.svg
+WB-304,Weigh hopper support plate,WB,MAKE,2,S235JR,Plate 6 mm,LASER,2.91,5.8,430.0,494.0,6.0,models/step/parts/WB-304.step,models/dxf/WB-304.dxf,drawings/parts/WB-304.svg
+WB-321,Slide gate body,WB,MAKE,2,AISI 304,Plate 8 mm,LASER,0.99,2.0,160.0,160.0,8.0,models/step/parts/WB-321.step,models/dxf/WB-321.dxf,drawings/parts/WB-321.svg
+WB-322,Slide gate guide,WB,MAKE,4,AISI 304,Angle 20x20x3,SAW,0.18,0.7,200.0,20.0,20.0,models/step/parts/WB-322.step,,drawings/parts/WB-322.svg
+WB-323,Slide gate blade,WB,MAKE,2,AISI 304,Plate 3 mm,LASER,0.6,1.2,104.0,250.0,3.0,models/step/parts/WB-323.step,models/dxf/WB-323.dxf,drawings/parts/WB-323.svg
+WB-401,Single-point load cell 100 kg,WB,BUY,2,Purchased,"Aluminium single-point (platform) load cell, 100 kg, C3, rated for platforms up to 600 x 600 mm, IP65, with 3 m cable",BUY,0.9,1.8,40.0,150.0,40.0,models/step/parts/WB-401.step,,drawings/parts/WB-401.svg
+WB-402,Load cell spacer,WB,MAKE,4,S235JR,Plate 10 mm,LASER,0.15,0.6,40.0,50.0,10.0,models/step/parts/WB-402.step,models/dxf/WB-402.dxf,drawings/parts/WB-402.svg
+WB-501,Weighing indicator,WB,BUY,2,Purchased,"Weighing indicator with large LED display, set-point output (2 relays), 230 V; 1 per hopper. Display in kg and % of batch target",BUY,1.2,2.4,200.0,80.0,130.0,models/step/parts/WB-501.step,,drawings/parts/WB-501.svg
+WB-502,Display post,WB,MAKE,2,S235JR,SHS 30x30x2,SAW,0.56,1.1,320.0,30.0,30.0,models/step/parts/WB-502.step,,drawings/parts/WB-502.svg
+WB-503,Display cross bar,WB,MAKE,1,S235JR,SHS 30x30x2,SAW,1.39,1.4,790.0,30.0,30.0,models/step/parts/WB-503.step,,drawings/parts/WB-503.svg
+WB-601,Batch incline screw (45 deg) - casing tube,WB,MAKE,1,S235JR,Tube OD114.3 x 3.6,SAW,19.21,19.2,2023.0,114.3,114.3,models/step/parts/WB-601.step,,drawings/parts/WB-601.svg
+WB-602,Batch incline screw (45 deg) - end flange,WB,MAKE,2,S235JR,Plate 8 mm,LASER,1.3,2.6,170.0,170.0,8.0,models/step/parts/WB-602.step,models/dxf/WB-602.dxf,drawings/parts/WB-602.svg
+WB-603,Batch incline screw (45 deg) - screw centre pipe,WB,MAKE,1,S235JR,Tube OD33.7 x 4,SAW,5.87,5.9,2003.0,33.7,33.7,models/step/parts/WB-603.step,,drawings/parts/WB-603.svg
+WB-604,Batch incline screw (45 deg) - tail stub shaft,WB,MAKE,1,C45,Round bar dia 30,TURN,0.53,0.5,135.0,25.7,25.7,models/step/parts/WB-604.step,,drawings/parts/WB-604.svg
+WB-605,Batch incline screw (45 deg) - drive stub shaft,WB,MAKE,1,C45,Round bar dia 30,TURN,0.95,0.9,250.0,25.7,25.7,models/step/parts/WB-605.step,,drawings/parts/WB-605.svg
+WB-607,Batch incline screw (45 deg) - outlet spout,WB,MAKE,1,S235JR,Sheet 3 mm,BEND,1.1,1.1,110.0,90.0,120.0,models/step/parts/WB-607.step,models/dxf/WB-607.dxf,drawings/parts/WB-607.svg
+WB-701,Incline screw support post,WB,MAKE,1,S235JR,SHS 50x50x3,SAW,3.89,3.9,879.0,50.0,50.0,models/step/parts/WB-701.step,,drawings/parts/WB-701.svg
+WB-702,Support post base plate,WB,MAKE,1,S235JR,Plate 8 mm,LASER,1.57,1.6,160.0,160.0,8.0,models/step/parts/WB-702.step,models/dxf/WB-702.dxf,drawings/parts/WB-702.svg
+WB-703,Support post saddle plate,WB,MAKE,1,S235JR,Plate 8 mm,LASER,1.22,1.2,140.0,140.0,8.0,models/step/parts/WB-703.step,models/dxf/WB-703.dxf,drawings/parts/WB-703.svg
